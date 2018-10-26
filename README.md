@@ -8,7 +8,7 @@
 ### Bryce Poeppel
 * About Me
 * Project Roles
-### Jose Rodriguez
+### Jose Francisco
 * About Me
 * Project Roles
 ### Mitchell Carroll
