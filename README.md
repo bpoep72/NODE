@@ -3,24 +3,30 @@
 ## Bios
 ***
 ### Austin Bearden
-*
+* About Me
+* Project Roles
 ### Bryce Poeppel
-*
+* About Me
+* Project Roles
 ### Jose Rodriguez
-*
+* About Me
+* Project Roles
 ### Mitchell Carroll
-*
+* About Me
+* Project Roles
 ### Peter Daum
-*
+* About Me
+* Project Roles
 ### Bard Polley
-*
+* About Me
+* Project Roles
 
 ## Group Process
 ***
 ### Requirements
 ---
-*
-*
+* Numbering Convention
+* 
 *
 ### Design
 ---
