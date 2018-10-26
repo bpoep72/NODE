@@ -59,7 +59,7 @@
 
 Store on `Issues`
 
-## GitHub Usage
+### GitHub Usage
 
 * A new branch for every feature
 
