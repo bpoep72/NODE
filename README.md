@@ -1,5 +1,28 @@
 # fall2018-group4
 
+## Git / GitHub Refresher:
+
+`git clone <repourl>`
+Clone this repository to local machine
+
+`git fetch` `git rebase origin/<branchname>`
+update your branch with current updates on origin
+
+`git branch`
+view all branches on local
+
+`git checkout <branchname>`
+switch to a different branch
+
+`git checkout -b <branchname>`
+create a new branch and switch to it
+
+`git stash`
+place all changes since last commit on stack. Helpful is you want to undo waht you have done
+
+`git stash pop`
+pops off item from stack from last stash
+
 ## Bios
 ***
 ### Austin Bearden
