@@ -40,7 +40,8 @@
 *
 *Styling:
 
-  *CSS: CSS Grid, CSS Flex-box
+    *CSS: CSS Grid, CSS Flex-box
+    
 ### Testing
 ---
 *
