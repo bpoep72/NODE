@@ -61,7 +61,7 @@ Store on `Issues`
 
 ## GitHub Ussage
 
-# A new branch for every feature
+* A new branch for every feature
 
-# Stage branch off of master branch that all our feature branches branch off of. Update master branch with stage every sprint.
+* Stage branch off of master branch that all our feature branches branch off of. Update master branch with stage every sprint.
 
