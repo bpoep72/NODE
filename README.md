@@ -38,7 +38,7 @@
 ---
 *
 *
-*Styling: CSS: CSS Grid, CSS Flex-box
+* Styling: CSS: CSS Grid, CSS Flex-box
     
 ### Testing
 ---
