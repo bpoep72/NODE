@@ -4,9 +4,13 @@
 ***
 ### Austin Bearden
 * About Me
+
     I am a Computer Science senior at IUPUI. Indianapolis born. I like thinking creatively and critically. I have played the acoustic guitar for 13 years. Playing guitar helps me relax and appreciate and thank GOD for all He has made and done for me.
+    
 * Project Roles
+
     Frontend developer: Ember and CSS
+    
 ### Bryce Poeppel
 * About Me
 * Project Roles
