@@ -5,7 +5,7 @@
 ### Austin Bearden
 * About Me
 
-    I am a Computer Science senior at IUPUI. Indianapolis born. I like thinking creatively and critically. I have played the acoustic guitar for 13 years. Playing guitar helps me relax and servers as a way to appreciate and thank GOD for all He has made and done for me.
+    I am a Computer Science senior at IUPUI. Indianapolis born. I like thinking creatively and critically. I have played the acoustic guitar for 13 years. Playing guitar helps me relax and serves as a way to appreciate and thank GOD for all He has made and done for me.
     
 * Project Roles
 
