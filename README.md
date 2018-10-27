@@ -40,7 +40,7 @@ pops off item from stack from last stash
 ### José Francisco
 * About Me
 
-José is a Computer Engineering (CE) senior at IUPUI born in Luanda, Angola. Though a CE major, Jose's greatest career interest in Software Development. One of his favorite classes in college was "Principles of Software Design" where he first heard about Software Design Patterns.
+    José is a Computer Engineering (CE) senior at IUPUI born in Luanda, Angola. Though a CE major, Jose's greatest career interest in Software Development. One of his favorite classes in college was "Principles of Software Design" where he first heard about Software Design Patterns.
 
 * Project Roles
 
