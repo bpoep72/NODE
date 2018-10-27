@@ -53,8 +53,9 @@ pops off item from stack from last stash
 * About Me
 * Project Roles
 ### Bard Polley
-* About Me
+* Bard is pursuing a Bachelor of Computer Science with a focus on databases and front-back end development interactions.
 * Project Roles
+    * Front-End Developer (EmberJS)
 
 ## Group Process
 ***
@@ -84,8 +85,10 @@ pops off item from stack from last stash
 ## Standards
 ***
 ### Coding Standards (Draft Pending Discussion)
-``` ecmascript 6
+#### Comments
+---
 * File Headers
+```ecmascript 6
 /************************************************
  * Application:  Application Name
  * File:  services/rentals.js
@@ -102,7 +105,7 @@ pops off item from stack from last stash
 ```
 * Section Headers 
     * Classes
-``` ecmascript 6
+```ecmascript 6
 /************************************************
  * Class:  Class Name
  * Purpose: Free-flow text with gist of filename 
@@ -112,7 +115,7 @@ pops off item from stack from last stash
  ***********************************************/
 ```
     * Functions
-``` ecmascript 6
+```ecmascript 6
 /************************************************
  * Function:  Function Name
  * Purpose: Free-flow text with gist of filename 
@@ -125,9 +128,33 @@ pops off item from stack from last stash
  * - yyyy-mmm-dd (initials) - Modification / update
  ***********************************************/
 ```
-* Naming Objects (standard JavaScript camelCase)
+#### Naming Conventions
+------
+* Standard JavaScript camelCase
     * Example (Primitives) - intCounter, iCounter
     * Example (Non-primitives) - objThisObject
+
+#### Code Block format
+```ecmascript 6
+//Option A
+if (init; cond; inc) {
+    //Statements
+} else {
+    //Statements
+}
+//Option B
+if (init; cond; inc)
+{
+    //Statements
+} else
+{
+    //Statements    
+}
+//Option X
+//Enter choice(s) here
+
+
+```
     
 ### User Stories
 
