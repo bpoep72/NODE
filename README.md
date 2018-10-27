@@ -76,14 +76,59 @@ pops off item from stack from last stash
 *
 ### Collaboration Tools
 ---
-* [link] Tool for xxxxx
-* [link] Tool for xxxxx
-* [link] Tool for xxxxx
+* [Tool for xxxxx](Link to Tool)
+* [Tool for xxxxx](Link to Tool)
+* [Tool for xxxxx](Link to Tool)
 
 
 ## Standards
 ***
-### Coding Standards
+### Coding Standards (Draft Pending Discussion)
+``` ecmascript 6
+* File Headers
+/************************************************
+ * Application:  Application Name
+ * File:  services/rentals.js
+ * Author: 
+ * Creation Date: yyyy-mmm-dd, dd mmm yyyy
+ * Feature: [Feature number and title]
+ * Purpose: Free-flow text with gist of filename 
+ * ?Related files: (not sure we need this - but other files addressing the same feature
+ * Modification History:
+ * - yyyy-mmm-dd (initials) - Modification / update
+ *
+ * Licensing Information
+ ***********************************************/
+```
+* Section Headers 
+    * Classes
+``` ecmascript 6
+/************************************************
+ * Class:  Class Name
+ * Purpose: Free-flow text with gist of filename 
+ * Input Parameter(s):
+ * Modification History:
+ * - yyyy-mmm-dd (initials) - Modification / update
+ ***********************************************/
+```
+    * Functions
+``` ecmascript 6
+/************************************************
+ * Function:  Function Name
+ * Purpose: Free-flow text with gist of filename 
+ * Input Parameter(s):
+ *  - Parameter name - Definition
+ *  - Parameter name - Definition
+ * Return / Output Parameter(s):
+ *  - Parameter name - Definition
+ * Modification History:
+ * - yyyy-mmm-dd (initials) - Modification / update
+ ***********************************************/
+```
+* Naming Objects (standard JavaScript camelCase)
+    * Example (Primitives) - intCounter, iCounter
+    * Example (Non-primitives) - objThisObject
+    
 ### User Stories
 
 Store on `Issues`
