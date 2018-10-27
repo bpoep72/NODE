@@ -51,7 +51,13 @@ pops off item from stack from last stash
 * Project Roles
 ### Peter Daum
 * About Me
+
+    I am a CE major, CS minor, working towards a career in Software Engineering. I enjoy making games, which is what sparked my interest in programming to begin with, even though I rarely enjoy playing games these days. In my fantasy world I would probably just make indie games (which would of course be successful enough to sustain my livelihood) with a small team.
+    
 * Project Roles
+
+    Front-End and Back-End Developer as needed
+
 ### Bard Polley
 * Bard is pursuing a Bachelor of Computer Science with a focus on databases and front-back end development interactions.
 * Project Roles
