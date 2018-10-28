@@ -143,16 +143,20 @@ pops off item from stack from last stash
 * Standard JavaScript camelCase
     * Example (Primitives) - intCounter, iCounter
     * Example (Non-primitives) - objThisObject
+        This is just an idea; I don't have the level of coding experience that you all have -- other recommendations welcome!
 
 #### Code Block format
 ```ecmascript 6
 //Option A
+
 if (init; cond; inc) {
     //Statements
 } else {
     //Statements
 }
-//Option B
+
+// * * * OR * * * Option B
+
 if (init; cond; inc)
 {
     //Statements
@@ -160,7 +164,9 @@ if (init; cond; inc)
 {
     //Statements    
 }
-//Option X
+
+//* * * OR * * * Option X
+
 //Enter choice(s) here
 
 
