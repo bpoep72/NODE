@@ -89,7 +89,7 @@ pops off item from stack from last stash
     
 ### Testing
 ---
-*
+* Decide anticipated testing needed for each requirement *as* the requirement is fleshed out
 *
 *
 ### Collaboration Tools
