@@ -37,7 +37,7 @@ pops off item from stack from last stash
 ### Bryce Poeppel
 * About Me
 
-    I am Computer Science senior at IUPUI. I was born in Fort Wayne Indiana, I primarily just work and play a variety of card games such as Magic the Gathering and Eternal or Path of Exile. I've always enjoyed programming interacting with the lower levels of the machine, but have spent the last summer working on Freelancer.com almost exclusively to repair or make minor modifications on webpages from a variety of sources.
+    I am a Computer Science senior at IUPUI. I was born in Fort Wayne Indiana, I primarily just work and play a variety of card games such as Magic the Gathering and Eternal, or Path of Exile. I've always enjoyed programming interacting with the lower levels of the machine, but have spent the last summer working on Freelancer.com almost exclusively to repair or make minor modifications on webpages from a variety of sources.
 * Project Roles
 
     Backend developer
@@ -76,7 +76,7 @@ pops off item from stack from last stash
 *
 ### Design
 ---
-*
+* 
 *
 * Styling: CSS: CSS Grid, CSS Flex-box
     
