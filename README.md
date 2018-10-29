@@ -79,13 +79,12 @@ pops off item from stack from last stash
 ### Design
 ---
 * Styling: CSS Grid, CSS Flex-box
-    * [Figma Mock-up Tool - Provides CSS styling] (https://help.figma.com/editor/developer-handoff)
+    * [Figma Mock-up Tool - Provides CSS styling](https://help.figma.com/editor/developer-handoff)
 * Take design documents provided by designers and turn them into:
     * Use Case Diagrams – User-level diagrams
     * GUI Diagrams – Presentation layer diagrams (for the customer)
     * Data Flow Diagrams - 
     * State Diagrams – capturing the state of the system
-        * it's a gui transition diagram, but are focused on how the system itself evolves
 *
     
 ### Testing
