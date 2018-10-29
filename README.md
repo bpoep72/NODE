@@ -150,20 +150,61 @@ pops off item from stack from last stash
 * Standard JavaScript camelCase
     * Example (Primitives) - intCounter, iCounter
     * Example (Non-primitives) - ThisObject
+* Arrays and Variables
+    * Plural variable name for array
+    * Singulare variable name for single instance variables
+* ALL-CAPS for constants
 
 #### Code Block format (We should pick one of the following)
 ```ecmascript 6
 
-if (init; cond; inc)
+for (init; cond; inc)
 {
     //Statements
-} else
+} 
+
+...
+
+if(condition)
 {
     //Statements    
 }
+else
+{
+    //Statements
+}
 
-//Enter choice(s) here
+...
 
+while(condition)
+{
+    //update condition
+}
+
+...
+
+void methodName()
+{
+    //functionality
+}
+
+...
+
+class ClassName
+{
+    //class content
+}
+
+...
+
+/*
+Muli-line comment
+
+*/
+
+...
+
+// Single-line comment
 
 ```
     
