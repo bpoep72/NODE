@@ -78,9 +78,15 @@ pops off item from stack from last stash
     * Phrase out technical issues with direct present tense comments
 ### Design
 ---
-* 
+* Styling: CSS Grid, CSS Flex-box
+    * [Figma Mock-up Tool - Provides CSS styling] (https://help.figma.com/editor/developer-handoff)
+* Take design documents provided by designers and turn them into:
+    * Use Case Diagrams – User-level diagrams
+    * GUI Diagrams – Presentation layer diagrams (for the customer)
+    * Data Flow Diagrams - 
+    * State Diagrams – capturing the state of the system
+        * it's a gui transition diagram, but are focused on how the system itself evolves
 *
-* Styling: CSS: CSS Grid, CSS Flex-box
     
 ### Testing
 ---
@@ -90,8 +96,8 @@ pops off item from stack from last stash
 ### Collaboration Tools
 ---
 * [Option - Kanban for Development and Bug testing (on Github)](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects)
-* [Tool for xxxxx](Link to Tool)
-* [Tool for xxxxx](Link to Tool)
+* [Slack for Communication](https://softengineeringclass.slack.com)
+* [Figma for Design](https://help.figma.com/editor/developer-handoff)
 
 
 ## Standards
