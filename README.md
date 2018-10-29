@@ -154,15 +154,6 @@ pops off item from stack from last stash
 
 #### Code Block format (We should pick one of the following)
 ```ecmascript 6
-//Option A
-
-if (init; cond; inc) {
-    //Statements
-} else {
-    //Statements
-}
-
-// * * * OR * * * Option B
 
 if (init; cond; inc)
 {
@@ -171,8 +162,6 @@ if (init; cond; inc)
 {
     //Statements    
 }
-
-//* * * OR * * * Option X
 
 //Enter choice(s) here
 
