@@ -149,8 +149,7 @@ pops off item from stack from last stash
 ------
 * Standard JavaScript camelCase
     * Example (Primitives) - intCounter, iCounter
-    * Example (Non-primitives) - objThisObject
-        This is just an idea; I don't have the level of coding experience that you all have -- other recommendations welcome!
+    * Example (Non-primitives) - ThisObject
 
 #### Code Block format (We should pick one of the following)
 ```ecmascript 6
