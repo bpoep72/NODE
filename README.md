@@ -216,5 +216,5 @@ Store on `Issues`
 
 * A new branch for every feature
 
-* Stage branch off of master branch that all our feature branches branch off of. Update master branch with stage every sprint.
+* Testing branch off of master branch that all our feature branches branch off of. Update master branch with testing every sprint.
 
