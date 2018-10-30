@@ -53,6 +53,8 @@ pops off item from stack from last stash
 ### Mitchell Carroll
 * About Me
 * Project Roles
+
+    Backend Developer
 ### Peter Daum
 * About Me
 
@@ -99,10 +101,7 @@ pops off item from stack from last stash
 
 ### Collaboration Tools
 ---
-* Task Tracking Tools
-    * [Organization (non-requirement based needs)](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects/1)
-    * [Front-End Implementation](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects/2)
-    * [Back-End Implementation](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects/3)
+* [Kanban for Development and Bug testing (on Github)](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects)
 * [Slack for Communication](https://softengineeringclass.slack.com)
 * [Figma for Design](https://help.figma.com/editor/developer-handoff)
 
