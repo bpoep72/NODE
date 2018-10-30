@@ -53,6 +53,8 @@ pops off item from stack from last stash
 ### Mitchell Carroll
 * About Me
 * Project Roles
+
+    Backend developer
 ### Peter Daum
 * About Me
 
