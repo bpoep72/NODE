@@ -53,8 +53,6 @@ pops off item from stack from last stash
 ### Mitchell Carroll
 * About Me
 * Project Roles
-
-    Backend developer
 ### Peter Daum
 * About Me
 
@@ -92,8 +90,14 @@ pops off item from stack from last stash
 ### Testing
 ---
 * Decide anticipated testing needed for each requirement *as* the requirement is fleshed out
-*
-*
+* QUnit framework will be used to define and run tests
+* We will adhere to test-driven development
+    * Acceptance tests will be written prior to implementation of each feature
+    * They will be run and confirmed to fail prior to implementation of the feature
+    * Through the proper implementation, the tests will be made to pass
+* Integration tests will be defined and run to verify interaction among features
+* Integration tests will be defined and run to verify integration of front-end and back-end
+
 ### Collaboration Tools
 ---
 * [Kanban for Development and Bug testing (on Github)](https://github.iu.edu/CS450-ECE461/fall2018-group4/projects)
