@@ -74,7 +74,7 @@ pops off item from stack from last stash
 * Use Issues (use #issue-number to relate requirements)
     * Tags for Issues: Frontend, Backend, Both, High, Medium, Low
     * Use standard numbering with issues
-* Content of Requirements: "As a [type of user] is want to be able to..."
+* Content of Requirements: "As a [type of user] I want to be able to..."
     * Phrase out technical issues with direct present tense comments
 ### Design
 ---
