@@ -163,7 +163,10 @@ pops off item from stack from last stash
     * Singulare variable name for single instance variables
 * ALL-CAPS for constants
 
-#### Code Block format (We should pick one of the following)
+#### Code Block format
+* Block opening and closing braces - aligned under the loop or block invariant
+* Use tab settings
+    * Webstorm : WebStorm -> Preferences -> Editor -> Code Style -> JavaScript/HTML, Use Tabs 
 ```ecmascript 6
 
 for (init; cond; inc)
