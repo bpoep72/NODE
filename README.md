@@ -85,7 +85,6 @@ pops off item from stack from last stash
     * GUI Diagrams – Presentation layer diagrams (for the customer)
     * Data Flow Diagrams - 
     * State Diagrams – capturing the state of the system
-*
     
 ### Testing
 ---
