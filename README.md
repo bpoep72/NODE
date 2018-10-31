@@ -159,7 +159,7 @@ pops off item from stack from last stash
     * Example (Non-primitives) - ThisObject
 * Arrays and Variables
     * Plural variable name for array
-    * Singulare variable name for single instance variables
+    * Singular variable name for single instance variables
 * ALL-CAPS for constants
 
 #### Code Block format
