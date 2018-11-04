@@ -1,0 +1,24 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Ember (Front End ignores)
+# compiled output
+/front_end/dist/
+/front_end/tmp/
+
+# dependencies
+/front_end/bower_components/
+/front_end/node_modules/
+
+# misc
+/front_end/.sass-cache
+/front_end/connect.lock
+/front_end/coverage/
+/libpeerconnection.log
+/front_end/npm-debug.log*
+/front_end/testem.log
+/front_end/yarn-error.log
+
+# ember-try
+/front_end/.node_modules.ember-try/
+/front_end/bower.json.ember-try
+/front_end/package.json.ember-try
