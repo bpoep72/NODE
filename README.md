@@ -1,4 +1,4 @@
-# NÔD (node)
+# NOD |nōd|
 
 ## About the application
 This application will provide a venue for researchers and potential participants to connect.
