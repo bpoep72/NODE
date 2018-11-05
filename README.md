@@ -41,7 +41,7 @@ pops off item from stack from last stash
 ###Front End Developers
 | Austin Bearden | Peter Daum | Bard Polley |
 | -------------- | ---------- | ----------- |
-| I am a Computer Science senior at IUPUI. Indianapolis born. I like thinking creatively and critically. I have played the acoustic guitar for 13 years. Playing guitar helps me relax and serves as a way to appreciate and thank GOD for all He has made and done for me. | I am a CE major, CS minor, working towards a career in Software Engineering. I enjoy making games, which is what sparked my interest in programming to begin with, even though I rarely enjoy playing games these days. In my fantasy world I would probably just make indie games (which would of course be successful enough to sustain my livelihood) with a small team. | Bard is pursuing a Bachelor of Computer Science with a focus on databases and front-back end development interactions.|
+| I am a Computer Science senior at IUPUI. Indianapolis born. I like thinking creatively and critically. I have played the acoustic guitar for 13 years. Playing guitar helps me relax and serves as a way to appreciate and thank GOD for all He has made and done for me. | I am a CE major, CS minor, working towards a career in Software Engineering. I enjoy making games, which is what sparked my interest in programming to begin with, even though I rarely enjoy playing games these days. In my fantasy world I would probably just make indie games (which would of course be successful enough to sustain my livelihood) with a small team. | Bard is pursuing a Bachelor of Computer Science with a focus on databases and front-back end development interactions. |
 | Ember, CSS | Front and Back-end | Ember, Requirements |
 
 ###Back End Developers
@@ -49,7 +49,7 @@ pops off item from stack from last stash
 | Bryce Poeppel | José Francisco | Mitchell Carroll | 
 | ------------- | -------------- | ---------------- |
 | I am a Computer Science senior at IUPUI. I was born in Fort Wayne Indiana, I primarily just work and play a variety of card games such as Magic the Gathering and Eternal, or Path of Exile. I've always enjoyed programming interacting with the lower levels of the machine, but have spent the last summer working on Freelancer.com almost exclusively to repair or make minor modifications on webpages from a variety of sources. | José is a Computer Engineering (CE) senior at IUPUI born in Luanda, Angola. Though a CE major, Jose's greatest career interest in Software Development. One of his favorite classes in college was "Principles of Software Design" where he first heard about Software Design Patterns. |
-|  Blueprint, | Blueprint, | Blueprint,  |
+|  Blueprint | Blueprint | Blueprint  |
 
 ## Group Process
 ***
