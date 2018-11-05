@@ -197,7 +197,7 @@ class ClassName
 ...
 
 /*
-Muli-line comment
+Multi-line comment
 
 */
 
