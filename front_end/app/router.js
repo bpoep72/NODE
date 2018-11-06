@@ -3,11 +3,12 @@
  * File:  app/router.js
  * Author:
  * Creation Date: 01 Nov 2018
- * Feature: [Feature number and title]
+ * Feature: Baseline
+ *  22 -login route
  * Purpose: Free-flow text with gist of filename
  * Modification History:
  * - 01 Nov 2018 (bwp) - Initial build (no features)
- *
+ * - 05 Nov 2018 (bwp) - Added route for login
  * Licensing Information
  ***********************************************/
 
@@ -20,6 +21,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('login');
 });
 
 export default Router;
