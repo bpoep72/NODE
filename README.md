@@ -1,4 +1,4 @@
-# NOD |nōd|
+![image](https://github.iu.edu/CS450-ECE461/fall2018-group4/blob/master/NODE.svg)
 
 ## About the application
 This application will provide a venue for researchers and potential participants to connect.
