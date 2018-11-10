@@ -8,6 +8,7 @@
 # dependencies
 /front_end/bower_components/
 /front_end/node_modules/
+/back-end/node_modules/
 
 # misc
 /front_end/.sass-cache
