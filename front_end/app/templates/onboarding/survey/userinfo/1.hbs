@@ -1,0 +1,28 @@
+<!--
+/************************************************
+* Application:  NOD
+* File:  app/templates/onboarding/survey/userinfo/1.hbs
+* Author:
+* Creation Date: 11 Nov 2018
+* Feature: 46 - implement  onboarding - user info page 1.
+* Purpose: Handlebar Script for retrieving user information
+* Modification History:
+* - 11 Nov 2018 (bwp) - Initial build - sample display
+*
+***********************************************/
+-->
+<div>
+  <a href="../../terms">Previous - Terms & Conditions</a><a href="2">Next - Basic Info (2)</a>
+</div>
+<h2>Onboarding - User Information (1)</h2>
+
+<form onSubmit="">
+  <label>E-mail Address:</label><input type="email"><br>
+  <label>Password:</label><input type="password"><br>
+  <label>Confirm Password:</label><input type="password"><br>
+  <label>First & Last Name:</label><input type="text"><br>
+  <label>Zip Code:</label><input type="number"><br>
+
+</form>
+<button type="submit">Submit Basic Info (1)</button>
+{{outlet}}

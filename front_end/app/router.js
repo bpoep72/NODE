@@ -24,7 +24,21 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('login');
-  this.route('onboarding');
+  this.route('onboarding', function() {
+    this.route('terms');
+
+    this.route('survey', function() {
+      this.route('userinfo', function() {
+        this.route('1');
+        this.route('2');
+      });
+      this.route('lifestyle');
+      this.route('medical');
+      this.route('education');
+      this.route('payment');
+    });
+    this.route('usertype');
+  });
 });
 
 export default Router;

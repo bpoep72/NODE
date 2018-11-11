@@ -1,0 +1,30 @@
+<!--
+/************************************************
+* Application:  NOD
+* File:  app/templates/onboarding/survey/lifestyle.hbs
+* Author:
+* Creation Date: 11 Nov 2018
+* Feature: 46 - implement  onboarding
+* Purpose: Handlebar Script for lifestyle survey
+* Modification History:
+* - 11 Nov 2018 (bwp) - Initial build - sample display
+*
+***********************************************/
+-->
+<div>
+  <a href="userinfo/2">Previous - Basic Info (2)</a>  <a href="medical">Next - Medical Hx</a>
+</div>
+
+<h2>Onboarding - Lifestyle Survey</h2>
+<h3>Question X</h3>
+<form onsubmit="">
+  <input type="radio" id="option1" name="lifestyle-x"><label for="option1">Option 1</label><br>
+  <input type="radio" id="option2" name="lifestyle-x"><label for="option2">Option 2</label><br>
+  <input type="radio" id="option3" name="lifestyle-x"><label for="option3">Option 3</label><br>
+  <input type="radio" id="option4" name="lifestyle-x"><label for="option4">Option 4</label><br>
+  <input type="radio" id="option5" name="lifestyle-x"><label for="option5">Option 5</label><br>
+
+
+</form>
+<button type="submit">Submit Lifestyle Info</button>
+{{outlet}}
