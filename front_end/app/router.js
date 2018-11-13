@@ -11,6 +11,7 @@
  * - 01 Nov 2018 (bwp) - Initial build (no features)
  * - 05 Nov 2018 (bwp) - Added route for login
  * - 09 Nov 2018 (bwp) - Added route for onboarding
+ * - 12 Nov 2018 (bwp) - Added routes for lifestyle survey
  * Licensing Information
  ***********************************************/
 
@@ -32,10 +33,13 @@ Router.map(function() {
         this.route('1');
         this.route('2');
       });
-      this.route('lifestyle');
-      this.route('medical');
-      this.route('education');
-      this.route('payment');
+      this.route('lifestyle', function() {
+        this.route('index');
+        this.route('alcohol');
+        this.route('medical');
+        this.route('education');
+        this.route('payment');
+      });
     });
     this.route('usertype');
   });
