@@ -40,6 +40,7 @@ Router.map(function() {
         this.route('education');
         this.route('payment');
         this.route('smoking');
+        this.route('diet');
       });
     });
     this.route('usertype');
