@@ -39,6 +39,7 @@ Router.map(function() {
         this.route('medical');
         this.route('education');
         this.route('payment');
+        this.route('smoking');
       });
     });
     this.route('usertype');
