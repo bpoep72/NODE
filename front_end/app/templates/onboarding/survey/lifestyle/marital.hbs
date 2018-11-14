@@ -1,0 +1,26 @@
+<!--
+/************************************************
+* Application:  NOD
+* File:  app/templates/onboarding/survey/lifestyle/marital.hbs
+* Author: Bard Polley
+* Creation Date: 14 Nov 2018
+* Feature: 41 - Survey - Marital Status
+* Purpose: Survey question for marital status
+* Modification History:
+* - 14 Nov 2018 (bwp) - Initial build - sample display
+*
+***********************************************/
+-->
+<div>
+  <a href="drugs">Previous - Survey (Drugs)</a><a href="children">Next - Survey (Children)</a>
+</div>
+<h2>What is your marital status?</h2>
+<form onSubmit="">
+  <input type="radio" id="statusSingle" name="maritalStatus"><label for="statusSingle">Never Married</label><br>
+  <input type="radio" id="statusMarried" name="maritalStatus"><label for="statusMarried">Married</label><br>
+  <input type="radio" id="statusDivorced" name="maritalStatus"><label for="statusDivorced">Divorced/label><br>
+  <input type="radio" id="statusSurvivor" name="maritalStatus"><label for="statusSurvivor">Widowed / Widowered</label><br>
+</form>
+<button type="submit">Next Question</button>
+
+{{outlet}}
