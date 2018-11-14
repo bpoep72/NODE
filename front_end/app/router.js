@@ -43,6 +43,7 @@ Router.map(function() {
         this.route('marital');
         this.route('diet');
         this.route('drugs');
+        this.route('children');
       });
     });
     this.route('usertype');
