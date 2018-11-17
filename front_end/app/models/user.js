@@ -5,6 +5,7 @@
  * Creation Date: 08 Nov 2018
  * Feature: 21 -User Data Model
  *          79 - User Profile model
+ *          81 - User Address model
  * Purpose: Login route / path for application
  * Modification History:
  * - 08 Nov 2018 (bwp) - Initial build
@@ -17,6 +18,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   userName: DS.attr('string'),
   passWord: DS.attr('string'),
-  profile: DS.hasOne('profile')
+  profile: DS.hasOne('profile'),
+  address: DS.hasOne('address')
 
 });
