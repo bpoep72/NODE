@@ -19,6 +19,7 @@ export default DS.Model.extend({
   userName: DS.attr('string'),
   passWord: DS.attr('string'),
   profile: DS.hasOne('profile'),
-  address: DS.hasOne('address')
+  address: DS.hasOne('address'),
+  survey: DS.hasOne('survey')
 
 });
