@@ -50,6 +50,7 @@ Router.map(function() {
   });
   this.route('dashboard');
   this.route('profile');
+  this.route('post');
 });
 
 export default Router;
