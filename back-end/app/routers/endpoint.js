@@ -1,19 +1,21 @@
 
 const blueprint = require ('@onehilltech/blueprint');
 const { Router } = blueprint;
+const cors = require('cors');
 
-const {cors} = require = ('@onehilltech/blueprint-gatekeeper');
+const corsOptions = {
+    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE']
+};
 
 module.exports = Router.extend ({
-    specification: {
-        '/gatekeeper': blueprint.mount ('@onehilltech/blueprint-gatekeeper:v1'),
-        
-        '/endpoint': {
-            policy: 'gatekeeper.auth.bearer'
-        },
-        
+    specification : {
+        '/' : { use: [cors (corsOptions)]},
+        '/gatekeeper': blueprint.mount('@onehilltech/blueprint-gatekeeper:v1'),
         '/user': {
-            policy: 'gatekeeper.auth.bearer'
+            //policy: 'gatekeeper.auth.bearer',
+            resource: {
+                controller: 'userController'
+            }
         }
     }
 });
