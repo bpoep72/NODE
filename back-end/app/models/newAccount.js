@@ -6,4 +6,4 @@ const schema = new Schema ({
     password: {type: String, required: true},
 });
 
-module.exports = mongodb.resource ('users', schema);
+module.exports = mongodb.resource ('', schema);

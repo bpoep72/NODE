@@ -7,4 +7,5 @@ module.exports = ResourceController.extend ({
   name: 'userController',
 
   Model: model('user')
+  
 });

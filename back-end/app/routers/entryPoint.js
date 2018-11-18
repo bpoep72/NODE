@@ -12,10 +12,16 @@ module.exports = Router.extend ({
         '/' : { use: [cors (corsOptions)]},
         '/gatekeeper': blueprint.mount('@onehilltech/blueprint-gatekeeper:v1'),
         '/user': {
-            //policy: 'gatekeeper.auth.bearer',
+            policy: 'gatekeeper.auth.bearer',
             resource: {
                 controller: 'userController'
             }
+        },
+        '/signIn': {
+            resource: {
+                controller: 'loginController'
+            }
         }
+       
     }
 });
