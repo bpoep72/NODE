@@ -1,0 +1,13 @@
+
+<form>
+  Email: <br>
+  {{input type="text" name="email"}} <br>
+  Password: <br>
+  {{input type="text" name="password"}} <br>
+  Confirm Password: <br>
+  {{input type="text" name="confirmPassword"}} <br>
+  <br>
+  <input {{action "createAccount"}} type="submit" value="Submit">
+</form>
+
+{{outlet}}
