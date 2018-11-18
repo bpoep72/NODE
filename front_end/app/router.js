@@ -51,6 +51,7 @@ Router.map(function() {
   this.route('dashboard');
   this.route('profile');
   this.route('post');
+  this.route('account');
 });
 
 export default Router;
