@@ -49,6 +49,7 @@ Router.map(function() {
     this.route('usertype');
   });
   this.route('dashboard');
+  this.route('profile');
 });
 
 export default Router;
