@@ -7,12 +7,12 @@ export default Controller.extend({
     email: '',
     password1: '',
     password2: '',
+    password: 'theValidatedPassword',
     first_name: '',
     last_name: '',
     zipcode: '',
 
     actions: {
-
         // gatekeeper code goes here
 
         executePost() {
@@ -22,8 +22,7 @@ export default Controller.extend({
                 method: 'PUT',
                 data: {
                     email: this.get('email'),
-                    password1: this.get('password1'),
-                    password2: this.get('password2'),
+                    password: this.get('password'),
                     first_name: this.get('first_name'),
                     last_name: this.get('last_name'),
                     zipcode: this.get('zipcode')
