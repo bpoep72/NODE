@@ -26,15 +26,21 @@ module.exports = function(environment) {
     },
 
     gatekeeper: {
-      baseUrl: 'localhost:5000/gatekeeper',
+      baseUrl: 'localhost:5000/',
 
       tokeOptions: {
         client_id: 'group4Node',
-        client_secret: 'stsshh'
+        client_secret: 'sstssh'
       }
     },
+    
+    'ember-cli-google': {
+        recaptcha: {
+          siteKey: '6LeyznsUAAAAAKAF-CJ-nswi_0338P2dPsmULUdz'
+        }
+    },
+    
     contentSecurityPolicyHeader: 'Content-Security-Policy',
-
 
   };
 
