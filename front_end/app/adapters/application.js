@@ -1,5 +1,8 @@
 import DS from 'ember-data';
+import RESTAdapter from 'ember-cli-gatekeeper/-lib/user/adapters/rest';
 
-export default DS.JSONAPIAdapter.extend({
-    namespace: 'api'
+export default RESTAdapter.extend({
+  
 });
+
+

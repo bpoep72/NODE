@@ -48,6 +48,7 @@ Router.map(function() {
     });
     this.route('usertype');
   });
+  this.route('create-account');
 });
 
 export default Router;

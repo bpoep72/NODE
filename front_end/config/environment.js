@@ -26,13 +26,14 @@ module.exports = function(environment) {
     },
 
     gatekeeper: {
-      baseUrl: 'localhost:5000/endpoint',
+      baseUrl: 'localhost:5000/gatekeeper',
 
       tokeOptions: {
-        client_id: '',
+        client_id: 'group4Node',
         client_secret: 'stsshh'
       }
-    }
+    },
+    contentSecurityPolicyHeader: 'Content-Security-Policy',
 
 
   };
