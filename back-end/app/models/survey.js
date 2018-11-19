@@ -1,0 +1,16 @@
+const mongodb = require ('@onehilltech/blueprint-mongodb');
+const {Schema} = mongodb;
+const {Types: {referesTo}} = Schema;
+
+const survey = new Schema ({
+	drinker: {type: Boolean},
+	smoker: {type: Boolean},
+	recreationalDrugs: {type: Boolean},
+	healthyDiet: {type: Number},
+	maritalStatus: {type: String},
+	children: {type: String},
+    educationalLevel: {type: String},
+    owner: {type: String, required: true}
+});
+
+module.exports = mongodb.resource ('survey', schema);
