@@ -5,7 +5,7 @@ const { cors } = require('@onehilltech/blueprint-gatekeeper');
 
 //currently not in use
 const corsOptions = {
-    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE']
+    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
 };
 
 module.exports = Router.extend ({

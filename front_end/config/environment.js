@@ -26,10 +26,10 @@ module.exports = function(environment) {
     },
 
     gatekeeper: {
-      baseUrl: 'localhost:5000/',
+      baseUrl: 'http://localhost:5000/gatekeeper',
 
       tokeOptions: {
-        client_id: 'group4Node',
+        client_id: '6bf5aef6859eab3befe6bd45',
         client_secret: 'sstssh'
       }
     },
@@ -39,9 +39,6 @@ module.exports = function(environment) {
           siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
         }
     },
-    
-    contentSecurityPolicyHeader: 'Content-Security-Policy',
-
   };
 
   if (environment === 'development') {

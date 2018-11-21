@@ -1,3 +1,3 @@
 module.exports = {
-  name : 'Node'
+  name : 'group4Node'
 };

@@ -9,9 +9,25 @@ module.exports = Seed.extend ({
     return {
         native:
         [{
+            _id: dab.id('6bf5aef6859eab3befe6bd45'),
             name: 'group4Node',
             email: 'client@gatekeeper.com',
-            client_secret: 'sstssh'
+            client_secret: 'sstssh',
+            scope: ['gatekeeper.account.create'],
+        }],
+        accounts:
+        [{
+            username: 'default',
+            password: 'default',
+            email: 'default@gmail.com',
+            scope: ['gatekeeper.account.create'],
+        }],
+        user_tokens:
+        [{
+            client: dab.ref('native.0'),
+            account: dab.ref('accounts.0'),
+            refresh_token: dab.id(),
+            scope: ['gatekeeper.account.create'],
         }],
         recaptcha:
         [{
@@ -19,12 +35,21 @@ module.exports = Seed.extend ({
             recaptcha_secret: '6LeyznsUAAAAAJcc_aicukl3prhL81vzMQoB0Gvm',
             email: 'bmpoeppel@iu.edu',
             scope: ['gatekeeper.account.create'],
-            origin: 'http://localhost'
+            origin: 'http://localhost',
         }],
         client_tokens:
         [{
-            client: dab.ref ('native.0'), scope: ['gatekeeper.account.create']
-        }],   
+            client: dab.ref ('native.0'),
+            scope: ['gatekeeper.account.create'],
+        }],
+        users:
+        [{
+            fname: 'John',
+            lname: 'Doe',
+            email: 'johnDoe@gmail.com',
+            password: 'password',
+            username: 'johnDoe@gmail.com'
+        }],
     };
   }
 });
