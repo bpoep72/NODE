@@ -11,7 +11,7 @@ module.exports = Seed.extend ({
         [{
             _id: dab.id('6bf5aef6859eab3befe6bd45'),
             name: 'group4Node',
-            email: 'client@gatekeeper.com',
+            email: 'client@no-reply.com',
             client_secret: 'sstssh',
             scope: ['gatekeeper.account.create'],
         }],
@@ -19,8 +19,9 @@ module.exports = Seed.extend ({
         [{
             username: 'default',
             password: 'default',
-            email: 'default@gmail.com',
+            email: 'default@no-replay.com',
             scope: ['gatekeeper.account.create'],
+            enabled: true,
         }],
         user_tokens:
         [{
