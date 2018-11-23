@@ -21,6 +21,7 @@ export default Controller.extend({
             return this.get('ajax').request('/user', {
                 method: 'PUT',
                 data: {
+                    client_id: '6bf5aef6859eab3befe6bd45',
                     email: this.get('email'),
                     password: this.get('password'),
                     first_name: this.get('first_name'),
