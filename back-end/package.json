@@ -15,7 +15,7 @@
   "dependencies": {
     "@onehilltech/blueprint": "^4.5.4",
     "@onehilltech/blueprint-cli": "^1.2.0",
-    "@onehilltech/blueprint-gatekeeper": "^0.86.0",
+    "@onehilltech/blueprint-gatekeeper": "^0.86.1",
     "@onehilltech/blueprint-mongodb": "^1.9.0",
     "cors": "^2.8.5",
     "pug": "^2.0.3"
