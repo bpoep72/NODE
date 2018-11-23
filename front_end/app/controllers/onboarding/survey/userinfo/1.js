@@ -28,7 +28,7 @@ export default Controller.extend({
                     last_name: this.get('last_name'),
                     zipcode: this.get('zipcode')
                 },
-                host: 'localhost:5000'
+                host: 'http://localhost:5000'
             });
         }
     }

@@ -27,10 +27,11 @@ module.exports = function(environment) {
 
     gatekeeper: {
       baseUrl: 'http://localhost:5000/gatekeeper',
+      startRoute: 'core.dashboard',
 
       tokenOptions: {
         client_id: '6bf5aef6859eab3befe6bd45',
-        client_secret: 'sstssh'
+        client_secret: 'sstssh',
       }
     },
     

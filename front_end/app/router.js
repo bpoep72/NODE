@@ -49,6 +49,10 @@ Router.map(function() {
     this.route('usertype');
   });
   this.route('create-account');
+
+  this.route('core', function() {
+    this.route('dashboard');
+  });
 });
 
 export default Router;
