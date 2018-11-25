@@ -55,12 +55,12 @@ Router.map(function() {
 
   this.route('core', function() {
     this.route('dashboard');
+    this.route('profile');
+    this.route('post');
+    this.route('accounts');
+    this.route('calendar');
   });
 //  this.route('dashboard');
-  this.route('profile');
-  this.route('post');
-  this.route('account');
-  this.route('calendar');
 });
 
 export default Router;
