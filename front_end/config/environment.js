@@ -10,6 +10,9 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+
+        // This must be enabled for account adapter to work.
+        'ds-improved-ajax': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -20,7 +23,23 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+
+    gatekeeper: {
+      baseUrl: 'http://localhost:5000/gatekeeper',
+      startRoute: 'core.dashboard',
+
+      tokenOptions: {
+        client_id: '6bf5aef6859eab3befe6bd45',
+        client_secret: 'sstssh',
+      }
+    },
+    
+    'ember-cli-google': {
+        recaptcha: {
+          siteKey: '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+        }
+    },
   };
 
   if (environment === 'development') {

@@ -50,7 +50,13 @@ Router.map(function() {
     });
     this.route('usertype');
   });
-  this.route('dashboard');
+
+  this.route('create-account');
+
+  this.route('core', function() {
+    this.route('dashboard');
+  });
+//  this.route('dashboard');
   this.route('profile');
   this.route('post');
   this.route('account');

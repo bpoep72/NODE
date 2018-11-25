@@ -14,12 +14,5 @@
 ***********************************************/
 --}}
 
-<h2>Login Page - app/templates/login.hbs</h2>
-<h3>Image Goes Here</h3>
-<label>Username:</label><input type="text">
-<label>Password:</label><input type="password">
-<h1></h1>
-<p>Forgot password?</p>
-<h1></h1>
-<p>New User?</p>
+{{gatekeeper-sign-in complete=(action "complete")}}
 {{outlet}}
