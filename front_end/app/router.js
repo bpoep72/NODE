@@ -12,6 +12,8 @@
  * - 05 Nov 2018 (bwp) - Added route for login
  * - 09 Nov 2018 (bwp) - Added route for onboarding
  * - 12 Nov 2018 (bwp) - Added routes for lifestyle survey
+ * - 18 Nov 2018 (bwp) - Added routes for dash, profile
+ *    post, account, calendar
  * Licensing Information
  ***********************************************/
 
@@ -48,11 +50,17 @@ Router.map(function() {
     });
     this.route('usertype');
   });
+
   this.route('create-account');
 
   this.route('core', function() {
     this.route('dashboard');
   });
+//  this.route('dashboard');
+  this.route('profile');
+  this.route('post');
+  this.route('account');
+  this.route('calendar');
 });
 
 export default Router;
