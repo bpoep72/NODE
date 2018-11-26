@@ -28,12 +28,9 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('login');
   this.route('onboarding', function() {
-    this.route('terms');
 
     this.route('survey', function() {
       this.route('userinfo', function() {
-        this.route('1');
-        this.route('2');
       });
       this.route('lifestyle', function() {
         this.route('index');
@@ -48,7 +45,6 @@ Router.map(function() {
         this.route('children');
       });
     });
-    this.route('usertype');
   });
 
   this.route('create-account');
@@ -60,7 +56,16 @@ Router.map(function() {
     this.route('account');
     this.route('calendar');
   });
-//  this.route('dashboard');
+  //  this.route('core');
+
+  this.route('signup', function() {
+    this.route('usertype');
+    this.route('terms');
+    this.route('user-demographics');
+    this.route('user-information');
+    this.route('create-account');
+  });
+  //  this.route('signup');
 });
 
 export default Router;
