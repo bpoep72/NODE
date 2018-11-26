@@ -52,6 +52,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+    ENV.gatekeeper.baseUrl = 'http://gatekeeper';
     ENV.locationType = 'none';
 
     // keep test console output quieter
