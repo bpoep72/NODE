@@ -18,7 +18,7 @@ const cors = require('cors');
 const corsOptions = {
     methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
     origin: "*",
-    preflightContinue: true,
+    preflightContinue: false,
     credentials: true,
 };
 
