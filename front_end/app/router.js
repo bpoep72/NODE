@@ -14,7 +14,7 @@
  * - 12 Nov 2018 (bwp) - Added routes for lifestyle survey
  * - 18 Nov 2018 (bwp) - Added routes for dash, profile
  *    post, account, calendar
- * Licensing Information
+ * - 26 Nov 2018 - Fixed route tree, reorganized in logical order
  ***********************************************/
 
 import EmberRouter from '@ember/routing/router';
@@ -27,11 +27,19 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('login');
+
+  this.route('signup', function() {
+    this.route('usertype');
+    this.route('terms');
+    this.route('user-demographics');
+    this.route('user-information');
+    this.route('create-account');
+  });
+  //  this.route('signup');
+
   this.route('onboarding', function() {
 
     this.route('survey', function() {
-      this.route('userinfo', function() {
-      });
       this.route('lifestyle', function() {
         this.route('index');
         this.route('alcohol');
@@ -47,8 +55,6 @@ Router.map(function() {
     });
   });
 
-  this.route('create-account');
-
   this.route('core', function() {
     this.route('dashboard');
     this.route('profile');
@@ -58,14 +64,6 @@ Router.map(function() {
   });
   //  this.route('core');
 
-  this.route('signup', function() {
-    this.route('usertype');
-    this.route('terms');
-    this.route('user-demographics');
-    this.route('user-information');
-    this.route('create-account');
-  });
-  //  this.route('signup');
 });
 
 export default Router;

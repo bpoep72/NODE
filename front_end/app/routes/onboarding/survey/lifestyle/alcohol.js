@@ -7,10 +7,10 @@
  * Purpose: Survey Question Behavior for Alcohol use
  * Modification History:
  * - 12 Nov 2018 (bwp) - Initial build
- * - 25 Nov 2018 (bwp - Added authentication requirement
+ * - 25 Nov 2018 (bwp) - Added authentication requirement
+ * - 26 Nov 2018 (bwp) - Delegated authentication to onboarding
  ***********************************************/
 import Route from '@ember/routing/route';
-import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 
-export default Route.extend(Authenticated, {
+export default Route.extend( {
 });
