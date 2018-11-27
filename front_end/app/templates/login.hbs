@@ -19,9 +19,19 @@
 
 <div class="login-main">
 
-<img src="assets/logo.png">
+    <div class="login-logo-box">
+        <img class="login-logo" src="assets/logo.png">
+    </div>
 
-{{gatekeeper-sign-in class="login-entry" complete=(action "complete")}}
+    {{!-- <div class="login-entry">
+        <div class="field-entry">
+            {{input class="email"}} <br> <br>
+            {{input class="password"}}
+        </div>
+        <div class="button-entry"></div>
+    </div> --}}
 
-{{outlet}}
+    {{gatekeeper-sign-in class="login-entry" complete=(action "complete")}}
+
+    {{outlet}}
 </div>

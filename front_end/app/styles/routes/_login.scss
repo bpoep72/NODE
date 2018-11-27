@@ -2,4 +2,67 @@
 
 .route__login {
 
+    .login-main {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/assets/login_background.png');
+        
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+        grid-template-areas:
+            "logo"
+            "entry";
+
+    }
+
+    .login-logo-box {
+        grid-area: logo;
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #ember239 {
+        border-radius: 100px;
+        height: 23px;
+        width: 320px;
+    }
+
+    #ember248 {
+        height: 20px;
+    }
+
+    #ember250 {
+        border-radius: 100px;
+        height: 23px;
+        width: 320px;
+    }
+
+    #ember254 {
+        background-color: #fbcfcd;
+        color: #584b4b;
+        font-size: 11px bold;
+        font-family: URW DIN;
+
+        width: 319px;
+        height: 48px;
+        border-radius: 100px;
+    }
+
+    .login-entry {
+        grid-area: entry;
+
+        margin-top: -200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #ember253 {
+        height: 65px;
+    }
+
 }
