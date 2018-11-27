@@ -9,8 +9,19 @@
 *          main page, and should contain the login details
 * Modification History:
 * - 05 Nov 2018 (bwp) - Initial build - sample display
+<<<<<<< HEAD
+=======
+* - 26 Nov 2018 (aib) - Adding html and css for login styling
+* Licensing Information
+>>>>>>> Added the style file for login route
 ***********************************************/
 --}}
 
-{{gatekeeper-sign-in complete=(action "complete")}}
+<div class="login-main">
+
+<img src="assets/logo.png">
+
+{{gatekeeper-sign-in class="login-entry" complete=(action "complete")}}
+
 {{outlet}}
+</div>
