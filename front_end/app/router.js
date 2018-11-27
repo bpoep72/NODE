@@ -14,7 +14,8 @@
  * - 12 Nov 2018 (bwp) - Added routes for lifestyle survey
  * - 18 Nov 2018 (bwp) - Added routes for dash, profile
  *    post, account, calendar
- * Licensing Information
+ * - 26 Nov 2018 - Fixed route tree, reorganized in logical order
+ * --- Fixed route for payment to nest correctly
  ***********************************************/
 
 import EmberRouter from '@ember/routing/router';
@@ -27,20 +28,25 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('login');
-  this.route('onboarding', function() {
+
+  this.route('signup', function() {
+    this.route('usertype');
     this.route('terms');
+    this.route('user-demographics');
+    this.route('user-information');
+    this.route('create-account');
+  });
+  //  this.route('signup');
+
+  this.route('onboarding', function() {
 
     this.route('survey', function() {
-      this.route('userinfo', function() {
-        this.route('1');
-        this.route('2');
-      });
+      this.route('payment');
       this.route('lifestyle', function() {
         this.route('index');
         this.route('alcohol');
         this.route('medical');
         this.route('education');
-        this.route('payment');
         this.route('smoking');
         this.route('marital');
         this.route('diet');
@@ -48,10 +54,7 @@ Router.map(function() {
         this.route('children');
       });
     });
-    this.route('usertype');
   });
-
-  this.route('create-account');
 
   this.route('core', function() {
     this.route('dashboard');
@@ -60,7 +63,8 @@ Router.map(function() {
     this.route('account');
     this.route('calendar');
   });
-//  this.route('dashboard');
+  //  this.route('core');
+
 });
 
 export default Router;
