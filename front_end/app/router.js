@@ -15,6 +15,7 @@
  * - 18 Nov 2018 (bwp) - Added routes for dash, profile
  *    post, account, calendar
  * - 26 Nov 2018 - Fixed route tree, reorganized in logical order
+ * --- Fixed route for payment to nest correctly
  ***********************************************/
 
 import EmberRouter from '@ember/routing/router';
@@ -40,12 +41,12 @@ Router.map(function() {
   this.route('onboarding', function() {
 
     this.route('survey', function() {
+      this.route('payment');
       this.route('lifestyle', function() {
         this.route('index');
         this.route('alcohol');
         this.route('medical');
         this.route('education');
-        this.route('payment');
         this.route('smoking');
         this.route('marital');
         this.route('diet');
