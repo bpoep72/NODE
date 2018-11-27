@@ -65,6 +65,7 @@ Router.map(function() {
   });
   //  this.route('core');
 
+  this.route('reset-password');
 });
 
 export default Router;
