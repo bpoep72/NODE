@@ -2,7 +2,7 @@ const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
 
-const survey = new Schema ({
+const schema = new Schema ({
 	drinker: {type: Boolean},
 	smoker: {type: Boolean},
 	recreationalDrugs: {type: Boolean},

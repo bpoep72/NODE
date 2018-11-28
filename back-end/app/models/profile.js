@@ -2,7 +2,7 @@ const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
 
-const profile = new Schema ({
+const schema = new Schema ({
 	fname: {type: String, required:true},
 	lname: {type: String, required:true},
 	age: {type: Number, required:false},
