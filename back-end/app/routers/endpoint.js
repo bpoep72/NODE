@@ -71,5 +71,14 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             },
         },
+        '/survey':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            resource:
+            {
+                controller: 'surveyController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            }
+        }
     }
 });
