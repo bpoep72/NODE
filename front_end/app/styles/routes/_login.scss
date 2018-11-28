@@ -60,6 +60,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .register-btn-box {
+
+            .register-btn {
+                width: 319px;
+                height: 48px;
+                border-radius: 100px;
+                background-color: #80d0d6;
+    
+            }
+
+        }
+
+        .reset-password-btn-box {
+
+            align-items: center;
+
+            .reset-password-btn {
+                width: 86px;
+                height: 17px;
+                font-family: URWDIN;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: 1px;
+                color: #fbcfcd;
+            }
+
+        }
+
         
     }
 
@@ -75,5 +107,10 @@
     #ember253 {
         height: 65px;
     }
+
+    #ember263 {
+        
+    }
+
 
 }
