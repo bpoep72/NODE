@@ -1,4 +1,3 @@
-/*
 const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
@@ -12,4 +11,3 @@ const schema = new Schema ({
 });
 
 module.exports = mongodb.resource ('directDeposit', schema);
-*/
