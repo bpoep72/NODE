@@ -1,4 +1,4 @@
-const mongodb = require ('@onehilltech/blueprint-mongodb');
+/*const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
 
@@ -14,3 +14,4 @@ const survey = new Schema ({
 });
 
 module.exports = mongodb.resource ('survey', schema);
+*/

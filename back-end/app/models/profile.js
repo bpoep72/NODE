@@ -1,8 +1,8 @@
-const mongodb = require ('@onehilltech/blueprint-mongodb');
-const {Schema} = mongodb;
-const {Types: {referesTo}} = Schema;
+/*const mongodb = require ('@onehilltech/blueprint-mongodb');
+const {schema} = mongodb;
+const {Types: {refersTo}} = schema;
 
-const profile = new Schema ({
+const profile = new schema ({
 	fname: {type: String, required:true},
 	lname: {type: String, required:true},
 	age: {type: Number, required:false},
@@ -14,3 +14,4 @@ const profile = new Schema ({
 });
 
 module.exports = mongodb.resource ('profile', schema);
+*/
