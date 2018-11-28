@@ -23,15 +23,15 @@
         <img class="login-logo" src="assets/logo.png">
     </div>
 
-    {{!-- <div class="login-entry">
-        <div class="field-entry">
-            {{input class="email"}} <br> <br>
-            {{input class="password"}}
-        </div>
-        <div class="button-entry"></div>
-    </div> --}}
+    <div class="login-entry">
 
-    {{gatekeeper-sign-in class="login-entry" complete=(action "complete")}}
+        {{gatekeeper-sign-in complete=(action "complete")}}
+
+        {{!-- {{#link-to "create-account" class="register-btn"}}
+            Register
+        {{/link-to}} --}}
+
+    </div>
 
     {{outlet}}
 </div>
