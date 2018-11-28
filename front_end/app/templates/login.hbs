@@ -9,8 +9,10 @@
 *          main page, and should contain the login details
 * Modification History:
 * - 05 Nov 2018 (bwp) - Initial build - sample display
+* - 27 Nov 2018 (bwp) - Added buttons for actions to create account
 ***********************************************/
 --}}
 
 {{gatekeeper-sign-in complete=(action "complete")}}
-{{outlet}}
+<br><button onclick={{action "executeCreateAccount"}}>Create Account</button><br><br>
+<button onclick={{action "executeResetPassword"}}>Reset Password</button>
