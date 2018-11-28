@@ -31,7 +31,7 @@ module.exports = Router.extend ({
         },
         '/gatekeeper': //gatekeeper mount point
             blueprint.mount('@onehilltech/blueprint-gatekeeper:v1'),
-        
+
         /*
          *start of gatekeeper protected routes
          */
@@ -41,6 +41,7 @@ module.exports = Router.extend ({
             //resource:
             //{
             //    controller: 'postController',
+            //    allow: ['create', 'getOne', 'getAll', 'delete', 'update'],
             //},
         },
         '/address':
@@ -48,25 +49,27 @@ module.exports = Router.extend ({
             policy: 'gatekeeper.auth.bearer',
             //resource:
             //{
-            //    controller: 'addressController'
+            //    controller: 'addressController',
+            //    allow: ['create', 'getOne', 'delete', 'update'],
             //},
         },
         '/directDeposit':
         {
             policy: 'gatekeeper.auth.bearer',
-            //resource:
-            //{
-            //    controller: 'directDepositController'
-            //},
+            resource:
+            {
+                controller: 'directDepositController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            },
         },
         '/profile':
         {
             policy: 'gatekeeper.auth.bearer',
-            //resource:
-            //{
-            //    controller: 'profileController'
-            //}
+            resource:
+            {
+                controller: 'profileController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            },
         },
-        
     }
 });
