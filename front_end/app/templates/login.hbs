@@ -9,26 +9,10 @@
 *          main page, and should contain the login details
 * Modification History:
 * - 05 Nov 2018 (bwp) - Initial build - sample display
-* - 26 Nov 2018 (aib) - Adding html and css for login styling
-* Licensing Information
+* - 27 Nov 2018 (bwp) - Added buttons for actions to create account
 ***********************************************/
 --}}
 
-<div class="login-main">
-
-    <div class="login-logo-box">
-        <img class="login-logo" src="assets/logo.png">
-    </div>
-
-    <div class="login-entry">
-
-        {{gatekeeper-sign-in complete=(action "complete")}}
-
-        {{!-- {{#link-to "create-account" class="register-btn"}}
-            Register
-        {{/link-to}} --}}
-
-    </div>
-
-    {{outlet}}
-</div>
+{{gatekeeper-sign-in complete=(action "complete")}}
+<br><button onclick={{action "executeCreateAccount"}}>Create Account</button><br><br>
+<button onclick={{action "executeResetPassword"}}>Reset Password</button>
