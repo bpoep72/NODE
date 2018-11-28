@@ -2,7 +2,7 @@
 const {schema} = mongodb;
 const {Types: {refersTo}} = schema;
 
-const profile = new schema ({
+const schema = new Schema ({
 	fname: {type: String, required:true},
 	lname: {type: String, required:true},
 	age: {type: Number, required:false},
