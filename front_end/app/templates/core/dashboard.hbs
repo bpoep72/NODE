@@ -9,9 +9,16 @@
 * Modification History:
 * - 18 Nov 2018 (bwp) - Initial build with placeholders
 * - 26 Nov 2018 (bwp) - Moved under core (authenticated page)
+* - 28 Nov 2018 (bwp) - Added transitions to calendar, account, profile, post
 ***********************************************/
 --}}
 <div id="topBar">NoDE Dashboard Hamburger</div>
+<div id="navigation">
+  <button onclick={{action "executeCalendar"}}>Calendar</button>
+  <button onclick={{action "executeAccount"}}>Account Info</button>
+  <button onclick={{action "executeProfile"}}>View Profile</button>
+  <button onclick={{action "executePost"}}>(Clicking on a post)</button>
+</div>
 <div id="surveys">Survey Headline Model Placeholder{{outlet}}</div>
 <div id="footer">Footer placeholder</div>
 
