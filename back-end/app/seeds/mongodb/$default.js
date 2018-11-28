@@ -43,14 +43,6 @@ module.exports = Seed.extend ({
             client: dab.ref ('native.0'),
             scope: ['gatekeeper.account.create'],
         }],
-        users:
-        [{
-            fname: 'John',
-            lname: 'Doe',
-            email: 'johnDoe@gmail.com',
-            password: 'password',
-            username: 'johnDoe@gmail.com'
-        }],
     };
   }
 });

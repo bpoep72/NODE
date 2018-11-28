@@ -18,6 +18,6 @@ module.exports = Controller.extend ({
       execute (req, res) {
         res.status (200).send("Test worked");
       }
-    })
+    });
   }
 });

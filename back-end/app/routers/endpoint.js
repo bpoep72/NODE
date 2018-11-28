@@ -23,7 +23,8 @@ const corsOptions = {
 };
 
 module.exports = Router.extend ({
-    specification : {
+    specification :
+    {
         '/': //cors to enable use across all sub domains
         {
             use: [cors(corsOptions)],
@@ -34,19 +35,38 @@ module.exports = Router.extend ({
         /*
          *start of gatekeeper protected routes
          */
-        '/user': { //user sub directory
+        '/post':
+        {
             policy: 'gatekeeper.auth.bearer',
-            resource: {
-                controller: 'userController'
-            }
+            //resource:
+            //{
+            //    controller: 'postController',
+            //},
         },
-        '/post': { //post sub directory
+        '/address':
+        {
             policy: 'gatekeeper.auth.bearer',
-            /* TODO: implement postController
-            resource: {
-                controller: 'postController',
-            }
-            */
+            //resource:
+            //{
+            //    controller: 'addressController'
+            //},
         },
+        '/directDeposit':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            //resource:
+            //{
+            //    controller: 'directDepositController'
+            //},
+        },
+        '/profile':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            //resource:
+            //{
+            //    controller: 'profileController'
+            //}
+        },
+        
     }
 });
