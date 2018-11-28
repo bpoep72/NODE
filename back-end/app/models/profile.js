@@ -1,4 +1,4 @@
-/*const mongodb = require ('@onehilltech/blueprint-mongodb');
+const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {schema} = mongodb;
 const {Types: {refersTo}} = schema;
 
@@ -14,4 +14,3 @@ const schema = new Schema ({
 });
 
 module.exports = mongodb.resource ('profile', schema);
-*/
