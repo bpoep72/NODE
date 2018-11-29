@@ -23,30 +23,62 @@ const corsOptions = {
 };
 
 module.exports = Router.extend ({
-    specification : {
+    specification :
+    {
         '/': //cors to enable use across all sub domains
         {
             use: [cors(corsOptions)],
         },
         '/gatekeeper': //gatekeeper mount point
             blueprint.mount('@onehilltech/blueprint-gatekeeper:v1'),
-        
+
         /*
          *start of gatekeeper protected routes
          */
-        '/user': { //user sub directory
+        '/post':
+        {
             policy: 'gatekeeper.auth.bearer',
-            resource: {
-                controller: 'userController'
-            }
+            //resource:
+            //{
+            //    controller: 'postController',
+            //    allow: ['create', 'getOne', 'getAll', 'delete', 'update'],
+            //},
         },
-        '/post': { //post sub directory
+        '/address':
+        {
             policy: 'gatekeeper.auth.bearer',
-            /* TODO: implement postController
-            resource: {
-                controller: 'postController',
-            }
-            */
+            //resource:
+            //{
+            //    controller: 'addressController',
+            //    allow: ['create', 'getOne', 'delete', 'update'],
+            //},
         },
+        '/directDeposit':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            resource:
+            {
+                controller: 'directDepositController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            },
+        },
+        '/profile':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            resource:
+            {
+                controller: 'profileController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            },
+        },
+        '/survey':
+        {
+            policy: 'gatekeeper.auth.bearer',
+            resource:
+            {
+                controller: 'surveyController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            }
+        }
     }
 });

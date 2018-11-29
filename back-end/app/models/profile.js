@@ -1,6 +1,6 @@
 const mongodb = require ('@onehilltech/blueprint-mongodb');
-const {schema} = mongodb;
-const {Types: {refersTo}} = schema;
+const {Schema} = mongodb;
+const {Types: {refersTo}} = Schema;
 
 const schema = new Schema ({
 	fname: {type: String, required:true},
