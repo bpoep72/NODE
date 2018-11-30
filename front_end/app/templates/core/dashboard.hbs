@@ -19,6 +19,10 @@
   <button onclick={{action "executeProfile"}}>View Profile</button>
   <button onclick={{action "executePost"}}>(Clicking on a post)</button>
 </div>
+{{#each model as |post|}}
+  {{post-dashboard}}
+{{/each}}
+
 <div id="surveys">Survey Headline Model Placeholder{{outlet}}</div>
 <div id="footer">Footer placeholder</div>
 

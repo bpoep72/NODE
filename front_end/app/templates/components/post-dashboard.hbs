@@ -1,0 +1,34 @@
+/* Application:  NOD
+* File:  app/templates/components/post-dashboard.js
+* Author: Bard Polley
+* Creation Date: 28 Nov 2018
+* Feature: 117 - Component view for dashboard GUI
+* Purpose: Component for use in dashboard GUI (HTML/Handlebar script
+* Modification History:
+* - 28 Nov 2018 (bwp) - Initial build
+***********************************************/
+<article class="post-dashboard">
+  <table>
+    <tbody>
+    <tr align="center">
+      <td>{{post.image}}</td>
+      <td>
+        <table>
+          <tr>
+            <td colspan="2">{{post.title}}</td>
+          </tr>
+          <tr>
+            <td colspan="2">{{post.description}}</td>
+          </tr>
+          <tr>
+            <td>{{post.endDate}}</td>
+            <td>
+            </td>{{post.payRate}}</tr>
+        </table>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</article>
+{{yield}}
