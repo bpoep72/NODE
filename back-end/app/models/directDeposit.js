@@ -3,10 +3,10 @@ const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
 
 const schema = new Schema ({
-	CCV: {type: Number, required:true},
-    cardNumber: {type: Number, required:true},
+	CCV: {type: String, required:true},
+	cardNumber: {type: String, required:true},
     issuer: {type: String, required: true},
-    routingNumber: {type: Number, required: true},
+    routingNumber: {type: String, required: true},
     owner: {type: String, required: true}
 });
 

@@ -4,7 +4,30 @@ const dab = require ('@onehilltech/dab');
 var number_of_accounts = 5;
 var number_of_posts = 80; //will randomly assign owners
 
-var maritalStatuses = ['single', 'married', 'divorced'];
+var marital_statuses = ['single', 'married', 'divorced'];
+var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
+
+
+/* Purpose: generates a random string of numbers 0-9 of the input lenght.
+ * Helpful for generating fake data in the directDeposit and address models.
+ * Also I looked for a library for 5secs didn't find one, thus I made this
+ * as is the js way.
+ * Params:
+ *  {int} length :
+ *    the desired output length
+ * Returns:
+ *  {string} output :
+ *    the generated output
+ */
+function random_nums_of_length(length)
+{
+  var output;
+  for(var i = 0; i < length; i++)
+  {
+    output += Math.floor(Math.random() * 10).toString();
+  }
+  return output;
+}
 
 /**
  * @class
@@ -80,17 +103,20 @@ module.exports = Seed.extend ({
               smoker: !!Math.round(Math.random()),  //i know js is weird
               recreationalDrugs: !!Math.round(Math.random()),
               healthyDiet: Math.floor(Math.random() * 5),
-              maritalStatus: maritalStatuses[Math.floor(Math.random() * maritalStatuses.length)], //pick one at random
+              maritalStatus: marital_statuses[Math.floor(Math.random() * marital_statuses.length)], //pick one at random
               children: Math.floor(Math.random() * 90),
             };
           }),
-        //directDeposit:
-        //  dab.map(dab.get('accounts'), function(account) {
-        //    return {
-        //      owner: account._id,
-        //      
-        //    };
-        //  }),
+        directDeposit:
+          dab.map(dab.get('accounts'), function(account) {
+            return {
+              owner: account._id,
+              CCV: random_nums_of_length(3),
+              cardNumber: random_nums_of_length(16),
+              routingNumber: random_nums_of_length(9),
+              issuer: ''
+            };
+          }),
     };
   }
 });
