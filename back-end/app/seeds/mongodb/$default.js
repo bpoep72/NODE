@@ -21,7 +21,7 @@ var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
  */
 function random_nums_of_length(length)
 {
-  var output;
+  var output = "";
   for(var i = 0; i < length; i++)
   {
     output += Math.floor(Math.random() * 10).toString();
@@ -78,7 +78,7 @@ module.exports = Seed.extend ({
         post:
           dab.times(number_of_posts, function(i) {
             return {
-              content: `test post #:${i}`,
+              content: `test post #${i}`,
               owner: dab.ref(dab.sample(dab.get('accounts'))),
             };
           }),
@@ -114,7 +114,16 @@ module.exports = Seed.extend ({
               CCV: random_nums_of_length(3),
               cardNumber: random_nums_of_length(16),
               routingNumber: random_nums_of_length(9),
-              issuer: ''
+              issuer: card_issuer[Math.floor(Math.random() * card_issuer.length)],
+            };
+          }),
+        address:
+          dab.map(dab.get('accounts'), function(account, i) {
+            return {
+              owner: account._id,
+              home: random_nums_of_length(4) + ' street name ' + i,
+              city: `city${i}`,
+              state: `state${i}`,
             };
           }),
     };
