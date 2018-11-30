@@ -54,10 +54,10 @@ module.exports = Seed.extend ({
               };
             }),
         user_tokens:
-            dab.times(number_of_accounts, function() {
+            dab.map(dab.get('accounts'), function(account) {
               return {
                 client: dab.ref('native.0'),
-                account: dab.ref(dab.sample(dab.get('accounts'))),
+                account: account._id,
                 refresh_token: dab.id(),
                 scope: ['gatekeeper.account.create'],
               };
