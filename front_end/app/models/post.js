@@ -17,5 +17,7 @@ export default DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr(''),
   comments: DS.attr(''),
-  rating: DS.attr('number')
+  rating: DS.attr('number'),
+  endDate: DS.attr('date'),
+  payRate: DS.attr('number')
 });
