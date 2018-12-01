@@ -7,4 +7,23 @@
   position: relative;
   z-index: 98 !important; // !important doesn't seem to be necessary
   text-align: center;
+
+  .header-text {
+    line-height: 65px;
+    display:inline-block;
+    vertical-align: middle;
+    font-family: urw-din, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #F0F8F8;
+    text-transform: uppercase;
+    font-size: 21px;
+  }
+
+  .node-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 }
+
