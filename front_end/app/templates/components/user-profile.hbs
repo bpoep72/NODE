@@ -1,0 +1,49 @@
+/* Application:  NOD
+* File:  app/templates/components/user-profile.js
+* Author: Bard Polley
+* Creation Date: 01 Dec 2018
+* Feature: 99 - Component view for profile GUI
+* Purpose: Component for use in profile GUI (HTML/Handlebar script)
+* Modification History:
+* - 01 Dec 2018 (bwp) - Initial build
+***********************************************/
+<article class="profile">
+  <div>{{profile.image}}</div>
+  <div>
+    {{profile.fname}} {{profile.lname}}
+  </div>
+  <div>
+    <table>
+      <tr>
+        <td>E-mail Address:</td>
+        <td>{{profile.email}}</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <td>Age</td>
+        <td>Height</td>
+        <td>Weight</td>
+      </tr>
+      <tr>
+        <td>{{profile.age}}</td>
+        <td>{{profile.height}}</td>
+        <td>{{profile.weight}}</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <td>Gender</td>
+        <td>Orientation</td>
+      </tr>
+      <tr>
+        <td>{{profile.gender}}</td>
+        <td>{{profile.orientation}}</td>
+      </tr>
+    </table>
+  </div>
+</article>

@@ -12,10 +12,10 @@
 ***********************************************/
 --}}
 <div id="topBar">NoDE Profile Hamburger</div>
-<div id="body">Profile Information
-  <div>User's Picture</div>
-  <div>User's Personal Information</div>
-  {{outlet}}</div>
+<div>{{#each model as |profile|}}
+  {{user-profile}}
+{{/each}}
+</div>
 <div id="footer">Footer placeholder - User Actions<br>
   <button>Update Account Info</button><br>
   <button>Update Payment Info</button><br>
