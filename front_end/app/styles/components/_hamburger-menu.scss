@@ -1,0 +1,17 @@
+// route: hamburger-menu
+
+.hamburger-menu {
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  background-color: #80d0d6;
+  z-index: 99 !important; // !important doesn't seem to be necessary
+}
+
+.hamburger-menu-open {
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  background-color: #f7a09b;
+  z-index: 99 !important; // !important doesn't seem to be necessary
+}

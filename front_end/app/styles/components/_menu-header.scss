@@ -1,0 +1,10 @@
+// route: menu-header
+
+.menu-header {
+  height: 65px;
+  width: 100vw;
+  background-color: #80d0d6;
+  position: relative;
+  z-index: 98 !important; // !important doesn't seem to be necessary
+  text-align: center;
+}
