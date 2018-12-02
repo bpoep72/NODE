@@ -9,10 +9,43 @@
 *          main page, and should contain the login details
 * Modification History:
 * - 05 Nov 2018 (bwp) - Initial build - sample display
+* - 26 Nov 2018 (aib) - Adding html and css for login styling
 * - 27 Nov 2018 (bwp) - Added buttons for actions to create account
+* Licensing Information
 ***********************************************/
 --}}
 
-{{gatekeeper-sign-in complete=(action "complete")}}
+{{!-- {{gatekeeper-sign-in complete=(action "complete")}}
 <br><button onclick={{action "executeCreateAccount"}}>Create Account</button><br><br>
-<button onclick={{action "executeResetPassword"}}>Reset Password</button>
+<button onclick={{action "executeResetPassword"}}>Reset Password</button> --}}
+
+<div class="login-main">
+
+    <div class="login-logo-box">
+        <img class="login-logo" src="assets/logo.png">
+    </div>
+
+    <div class="login-entry">
+
+        {{gatekeeper-sign-in complete=(action "complete")}}
+
+        {{!-- <button class="register-btn" onclick={{action "executeCreateAccount"}}>Register</button>  --}}
+        {{!-- This is the create account section --}}
+        {{!-- <button class="reset-password-btn" onclick={{action "executeResetPassword"}}>Click here</button>  --}}
+        {{!-- This is the reset password section --}}
+
+
+        {{#link-to "signup.create-account" class="register-btn"}}Register{{/link-to}}
+        
+        <div class="reset-text">
+            forgot password?
+        </div>
+
+        <div class="reset-password-btn-box">
+            {{#link-to "reset-password" class="reset-password-btn"}}Click here{{/link-to}}
+        </div>
+
+    </div>
+
+    {{outlet}}
+</div>
