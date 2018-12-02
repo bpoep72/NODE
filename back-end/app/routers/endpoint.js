@@ -38,20 +38,20 @@ module.exports = Router.extend ({
         '/post':
         {
             policy: 'gatekeeper.auth.bearer',
-            //resource:
-            //{
-            //    controller: 'postController',
-            //    allow: ['create', 'getOne', 'getAll', 'delete', 'update'],
-            //},
+            resource:
+            {
+                controller: 'postController',
+                allow: ['create', 'getOne', 'getAll', 'delete', 'update'],
+            },
         },
         '/address':
         {
             policy: 'gatekeeper.auth.bearer',
-            //resource:
-            //{
-            //    controller: 'addressController',
-            //    allow: ['create', 'getOne', 'delete', 'update'],
-            //},
+            resource:
+            {
+                controller: 'addressController',
+                allow: ['create', 'getOne', 'delete', 'update'],
+            },
         },
         '/directDeposit':
         {
@@ -64,11 +64,12 @@ module.exports = Router.extend ({
         },
         '/profile':
         {
-            policy: 'gatekeeper.auth.bearer',
+            //policy: 'gatekeeper.auth.bearer',
             resource:
             {
                 controller: 'profileController',
-                allow: ['create', 'getOne', 'delete', 'update'],
+                //TODO: remove getAll before merge to master
+                allow: ['create', 'getOne', 'delete', 'update', 'getAll'],
             },
         },
         '/survey':
