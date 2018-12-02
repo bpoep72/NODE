@@ -64,7 +64,7 @@ module.exports = Router.extend ({
         },
         '/profile':
         {
-            //policy: 'gatekeeper.auth.bearer',
+            policy: 'gatekeeper.auth.bearer',
             resource:
             {
                 controller: 'profileController',
