@@ -35,7 +35,7 @@ module.exports = Router.extend ({
         /*
          *start of gatekeeper protected routes
          */
-        '/post':
+        '/posts':
         {
             policy: 'gatekeeper.auth.bearer',
             resource:
@@ -53,7 +53,7 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             },
         },
-        '/directDeposit':
+        '/directDeposits':
         {
             policy: 'gatekeeper.auth.bearer',
             resource:
@@ -62,7 +62,7 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             },
         },
-        '/profile':
+        '/profiles':
         {
             policy: 'gatekeeper.auth.bearer',
             resource:
@@ -72,7 +72,7 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update', 'getAll'],
             },
         },
-        '/survey':
+        '/surveys':
         {
             policy: 'gatekeeper.auth.bearer',
             resource:
