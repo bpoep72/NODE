@@ -22,7 +22,6 @@ export default Route.extend(Authenticated, {
   },
 
   model() {
-<<<<<<< HEAD
    // this.controllerFor('core').set('header', 'Profile');
    
 
@@ -32,9 +31,5 @@ export default Route.extend(Authenticated, {
 //    this.get('store').query('profile', {owner: currentUser.id});
 //    this.get('store').query('profile', {fname: "John0"});
     return currentUser;
-=======
-    this.controllerFor('core').set('header', 'Profile');
-    let currentProfile = this.get ('currentUser');
->>>>>>> ab9870723e19877583d79101c1299329390f02dc
   }
 });
