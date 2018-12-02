@@ -28,7 +28,7 @@ export default Route.extend(Authenticated, {
     let currentUser = this.get('currentUser');
 
 
-//    this.get('store').query('profile', {owner: currentUser.id});
+    this.get('store').query('profile', {});
 //    this.get('store').query('profile', {fname: "John0"});
     return currentUser;
   }
