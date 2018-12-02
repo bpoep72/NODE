@@ -8,7 +8,7 @@ const schema = new Schema ({
 	recreationalDrugs: {type: Boolean},
 	healthyDiet: {type: Number},
 	maritalStatus: {type: String},
-	children: {type: String},
+	children: {type: Number},
     educationalLevel: {type: String},
     owner: {type: String, required: true}
 });
