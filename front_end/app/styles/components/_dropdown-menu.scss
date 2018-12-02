@@ -1,0 +1,60 @@
+// route: dropdown-menu
+
+.dropdown-menu {
+  position: absolute;
+  top: -35px;
+  -webkit-transition: top 0.2s ease-out; /* Safari */
+  transition: top 0.2s ease-out;
+  width: 100vw;
+  height: 100px;
+  background-color: #f7a09b;
+  box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.1); }
+
+.dropdown-menu-open {
+  position: absolute;
+  top: 65px;
+  -webkit-transition: top 0.2s ease-out; /* Safari */
+  transition: top 0.2s ease-out;
+  width: 100vw;
+  height: 100px;
+  background-color: #f7a09b;
+  box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.1);  
+}
+
+.button-dashboard {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+}
+
+.button-calendar {
+  position: absolute;
+  top: 30px;
+  left: 25%;
+}
+
+.button-account {
+  position: absolute;
+  top: 30px;
+  left: 45%;
+}
+
+.button-profile {
+  position: absolute;
+  top: 30px;
+  right: 25%;
+}
+
+.button-post {
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+
+.icon-image {
+  width: 40px;
+}
+
+.icon-calendar {
+  width: 36px
+}
