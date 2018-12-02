@@ -12,9 +12,24 @@
  ***********************************************/
 
 import Route from '@ember/routing/route';
+import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 
-export default Route.extend( {
+export default Route.extend(Authenticated, {
+
+  beforeModel() {
+    // trying in beforeModel instead, shouldn't make much difference
+    this.controllerFor('core').set('header', 'Profile');
+  },
+
   model() {
-    this.controllerFor('core').set('header', 'Profile')
+   // this.controllerFor('core').set('header', 'Profile');
+   
+
+    let currentUser = this.get('currentUser');
+
+
+//    this.get('store').query('profile', {owner: currentUser.id});
+//    this.get('store').query('profile', {fname: "John0"});
+    return currentUser;
   }
 });

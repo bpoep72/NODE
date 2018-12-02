@@ -21,5 +21,6 @@ export default DS.Model.extend({
   orientation: DS.attr('string'),
   height: DS.attr('string'),
   weight: DS.attr('string'),
-  user: DS.belongsTo('user', {async: true})
+  user: DS.belongsTo('user', {async: true}),
+  owner: DS.attr('string'),
 });
