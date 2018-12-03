@@ -69,7 +69,7 @@ module.exports = Router.extend ({
             {
                 controller: 'profileController',
                 //TODO: remove getAll before merge to master
-                allow: ['create', 'getOne', 'delete', 'update', 'getAll'],
+                allow: ['create', 'getOne', 'delete', 'update'],
             },
         },
         '/surveys':

@@ -9,9 +9,8 @@ module.exports = ResourceController.extend ({
   
   getOne()
   {
-    return Action.extend
-    ({
-      execute (req, res)
+    return function(req, res)
+    {
       {
         profile.findOne({ owner: req.user._id, }, function(error, profile)
         {
@@ -29,7 +28,7 @@ module.exports = ResourceController.extend ({
           }
         });
       }
-    });
+    };
   },
   
   create()
