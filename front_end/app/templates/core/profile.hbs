@@ -11,19 +11,20 @@
 * - 25 Nov 2018 (bwp) - Relocated to core route
 ***********************************************/
 --}}
-<div id="topBar">NoDE Profile Hamburger</div>
-<div>{{#each model as |profile|}}
-  {{user-profile}}
-{{/each}}
+<div id="topBar">User Profile</div>
+<br>
+<div>
+  <p>First Name: {{model.fname}} </p>
+  <p>Last Name: {{model.lname}} </p>
+  <p>Age: {{model.age}} </p>
+  <p>Ethnicity: {{model.ethnicity}} </p>
+  <p>Orientation: {{model.orientation}} </p>
+  <p>Height: {{model.height}} </p>
+  <p>Weight: {{model.weight}} </p>
 </div>
+<br>
 <div id="footer">Footer placeholder - User Actions<br>
   <button>Update Account Info</button><br>
   <button>Update Payment Info</button><br>
   <button>Take the Lifestyle Survey Again</button>
-
-  <p>email: {{model.email}}</p>
-  <p>username: {{model.username}}</p>
-  <p>enabled: {{model.enabled}}</p>
-  <p>id: {{model.id}}</p>
-
 </div>

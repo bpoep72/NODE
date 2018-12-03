@@ -17,19 +17,13 @@ import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 export default Route.extend(Authenticated, {
 
   beforeModel() {
-    // trying in beforeModel instead, shouldn't make much difference
     this.controllerFor('core').set('header', 'Profile');
   },
 
   model() {
-   // this.controllerFor('core').set('header', 'Profile');
-   
-
     let currentUser = this.get('currentUser');
 
-
-//    this.get('store').query('profile', {owner: currentUser.id});
-//    this.get('store').query('profile', {fname: "John0"});
-    return currentUser;
+    // make request for single record, where is is not known (use findRecord if id is known)
+    return this.get('store').queryRecord('profile', {owner: currentUser.id});
   }
 });

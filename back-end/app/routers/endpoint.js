@@ -62,7 +62,7 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             },
         },
-        '/profile':
+        '/profiles':
         {
             policy: 'gatekeeper.auth.bearer',
             resource:
