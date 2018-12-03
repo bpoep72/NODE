@@ -24,6 +24,6 @@ export default Route.extend(Authenticated, {
     let currentUser = this.get('currentUser');
 
     // make request for single record, where is is not known (use findRecord if id is known)
-    return this.get('store').findRecord('profile', ':' +currentUser.id);
+    return this.get('store').findRecord('profile', ':' + currentUser.id);
   }
 });

@@ -24,7 +24,7 @@ module.exports = ResourceController.extend ({
           }
           else //found
           {
-            res.status(200).json(profile);
+            res.status(200).json({profile: profile});
           }
         });
       }
