@@ -1,3 +1,4 @@
+{{!--
 /* Application:  NOD
 * File:  app/templates/components/post-dashboard.js
 * Author: Bard Polley
@@ -6,29 +7,29 @@
 * Purpose: Component for use in dashboard GUI (HTML/Handlebar script
 * Modification History:
 * - 28 Nov 2018 (bwp) - Initial build
+* - 03 Dec 2018 (bwp) - fixed comments
 ***********************************************/
-<article class="post-dashboard">
+--}}
+<article class="post">
   <table>
     <tbody>
     <tr align="center">
-      <td>{{post.image}}</td>
+      <td>{{post.image}}Image</td>
       <td>
         <table>
           <tr>
-            <td colspan="2">{{post.title}}</td>
+            <td colspan="2">Title: {{yield post.title}}</td>
           </tr>
           <tr>
-            <td colspan="2">{{post.description}}</td>
+            <td colspan="2">Content: {{post.content}}</td>
           </tr>
           <tr>
-            <td>{{post.endDate}}</td>
+            <td>Created on: {{post.dateMade}}</td>
             <td>
-            </td>{{post.payRate}}</tr>
+            </td>Pay Rate: {{post.payRate}}</tr>
         </table>
       </td>
     </tr>
     </tbody>
   </table>
-
 </article>
-{{yield}}

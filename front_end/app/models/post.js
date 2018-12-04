@@ -18,6 +18,9 @@ export default DS.Model.extend({
   description: DS.attr(''),
   comments: DS.attr(''),
   rating: DS.attr('number'),
-  endDate: DS.attr('date'),
+//  dateMade: DS.attr('date'),
+//  content: DS.attr('string'),
+//  owner: DS.attr('string')
   payRate: DS.attr('number')
 });
+
