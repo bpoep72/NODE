@@ -10,6 +10,8 @@
 *     page needs to be incorporated into the target route
 *   (TODO: At this point, still need to tie the correct post to the component)
 *   (TODO: /core/post page needs to be built out with component or field data)
+
+* SHOULD BE ABLE TO REMOVE THIS COMPONENT NOW
 ***********************************************/
 
 import Component from '@ember/component';
