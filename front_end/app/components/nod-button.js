@@ -1,7 +1,8 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  classNames: ['nod-button'],
+  classNameBindings: ['notBlue:nod-button-pink:nod-button-blue'],
+  notBlue: true,
   title: 'Button',
 
   click() {

@@ -5,7 +5,8 @@ export default Controller.extend({
   actions: {
     continue() {
       // TO DO
+      this.transitionToRoute('onboarding.lifestyle')
     }
   }
-  
+
 });

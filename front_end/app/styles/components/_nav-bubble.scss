@@ -7,6 +7,8 @@
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
 
   text-align: center;
   vertical-align: middle;
@@ -29,6 +31,8 @@
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
 
   text-align: center;
   vertical-align: middle;

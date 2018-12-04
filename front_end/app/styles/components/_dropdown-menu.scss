@@ -3,11 +3,11 @@
 .dropdown-menu {
   position: absolute;
   top: -35px;
-  -webkit-transition: top 0.2s ease-out; /* Safari */
-  transition: top 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
   width: 100vw;
   height: 100px;
-  background-color: #f7a09b;
+  background-color: #80d0d6;
   box-shadow: inset 0px 19px 19px -20px rgba(0,0,0,0.35); 
 
   display: grid;
@@ -20,8 +20,8 @@
 .dropdown-menu-open {
   position: absolute;
   top: 65px;
-  -webkit-transition: top 0.2s ease-out; /* Safari */
-  transition: top 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
   width: 100vw;
   height: 100px;
   background-color: #f7a09b;

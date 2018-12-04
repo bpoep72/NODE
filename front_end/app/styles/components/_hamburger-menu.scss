@@ -6,6 +6,8 @@
   position: absolute;
   background-color: #80d0d6;
   z-index: 99 !important; // !important doesn't seem to be necessary
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
 }
 
 .hamburger-menu-open {
@@ -14,6 +16,8 @@
   position: absolute;
   background-color: #f7a09b;
   z-index: 99 !important; // !important doesn't seem to be necessary
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
 }
 
 .icon {
