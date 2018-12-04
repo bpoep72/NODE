@@ -4,12 +4,13 @@ const {Types: {referesTo}} = Schema;
 
 const schema = new Schema ({
     dateMade: {type: Date, required: true, default: Date.now},
-    desciption: {type: String, required: true, trim: true },
+    description: {type: String, required: true, trim: true },
     owner: { type: String, required: true, trim: true },
     title: {type: String, required: true, trim: true },
-    comments: {type: String, trim: true },
+    comments: {type: Object },
     rating: {type: Number },
-    endDate: {type: Date, required: true, },
+    //endDate should be required in the future just can't make it in the seed atm
+    endDate: {type: Date, },
     payType: {type: String, trim: true },
     payRate: {type: String, trim: true }
     

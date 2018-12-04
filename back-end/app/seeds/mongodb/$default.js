@@ -78,8 +78,9 @@ module.exports = Seed.extend ({
         post:
           dab.times(number_of_posts, function(i) {
             return {
-              content: `test post #${i}`,
+              description: `test post descption #${i}`,
               owner: dab.ref(dab.sample(dab.get('accounts'))),
+              title: `Test Post Title #${i}`,
             };
           }),
         profile:
