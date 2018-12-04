@@ -6,6 +6,7 @@ var number_of_posts = 80; //will randomly assign owners
 
 var marital_statuses = ['single', 'married', 'divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
+var payment_type = ['Non disclosed', 'Per Visit', 'Per Completion', 'Per Hour'];
 
 
 /* Purpose: generates a random string of numbers 0-9 of the input lenght.
@@ -27,6 +28,15 @@ function random_nums_of_length(length)
     output += Math.floor(Math.random() * 10).toString();
   }
   return output;
+}
+
+function random_date()
+{
+  var output = new Date();
+  output.setYear(2018 + Math.floor(Math.random() * 3));
+  output.setDate(Math.floor(Math.random() * 28));
+  output.setMonth(Math.floor(Math.random() * 12));
+  return output.toISOString();
 }
 
 /**
@@ -78,14 +88,19 @@ module.exports = Seed.extend ({
         post:
           dab.times(number_of_posts, function(i) {
             return {
-              content: `test post #${i}`,
+              description: `test post description #${i}`,
               owner: dab.ref(dab.sample(dab.get('accounts'))),
+              title: `Test Post Title #${i}`,
+              payType: payment_type[Math.floor(Math.random() * payment_type.length)],
+              payRate: Math.floor(Math.random() * 150),
+              rating: Math.floor(Math.random() * 5),
+              endDate: random_date(),   
             };
           }),
         profile:
           dab.map(dab.get('accounts'), function (account, i) {
               return {
-                owner: account._id,
+                _id: account._id,
                 fname: `John${i}`,
                 lname: `Doe${i}`,
                 age: Math.floor(Math.random() * 115),
@@ -98,7 +113,7 @@ module.exports = Seed.extend ({
         survey:
           dab.map(dab.get('accounts'), function (account) { //map maps each account to 1 entry
             return {
-              owner: account._id,
+              _id: account._id,
               drinker: !!Math.round(Math.random()), //!! means convert to boolean
               smoker: !!Math.round(Math.random()),  //i know js is weird
               recreationalDrugs: !!Math.round(Math.random()),
@@ -110,7 +125,7 @@ module.exports = Seed.extend ({
         directDeposit:
           dab.map(dab.get('accounts'), function(account) {
             return {
-              owner: account._id,
+              _id: account._id,
               CCV: random_nums_of_length(3),
               cardNumber: random_nums_of_length(16),
               routingNumber: random_nums_of_length(9),
@@ -120,7 +135,7 @@ module.exports = Seed.extend ({
         address:
           dab.map(dab.get('accounts'), function(account, i) {
             return {
-              owner: account._id,
+              _id: account._id,
               home: random_nums_of_length(4) + ' street name ' + i,
               city: `city${i}`,
               state: `state${i}`,
