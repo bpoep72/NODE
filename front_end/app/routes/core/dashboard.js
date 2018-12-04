@@ -9,6 +9,8 @@
  * - 18 Nov 2018 (bwp) - Initial build
  * - 25 Nov 2018 (bmp/bwp) Relocated under core
  * - 26 Nov 2018 (bwp) delegated authentication to core route
+ * - 03 Nov 2018 (bwp) created request for all posts without
+ *      delimiting them by user
  ***********************************************/
 import Route from '@ember/routing/route';
 
@@ -27,10 +29,10 @@ export default Route.extend( {
     updateDashboard() {
       let controller = this.get('controller');
 
-      let image = controller.get('image')
-      let owner = controller.get('owner')
-      let content = controller.get('content')
-      let dateMade = controller.get('dateMade')
+//      let image = controller.get('image')
+//      let title = controller.get('title')
+//      let description = controller.get('description')
+//      let dateMade = controller.get('dateMade')
 /*
       let currentUser = this.get('currentUser');
       this.store.findRecord('profile', ':' + currentUser.id).then(function(prof){
