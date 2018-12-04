@@ -12,7 +12,7 @@ module.exports = ResourceController.extend ({
     return function(req, res)
     {
       {
-        profile.findOne({ owner: req.user._id, }, function(error, profile)
+        profile.findOne({ _id: req.user._id, }, function(error, profile)
         {
           if(error) //some server error
           {

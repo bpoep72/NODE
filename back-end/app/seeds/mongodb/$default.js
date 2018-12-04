@@ -85,7 +85,7 @@ module.exports = Seed.extend ({
         profile:
           dab.map(dab.get('accounts'), function (account, i) {
               return {
-                owner: account._id,
+                _id: account._id,
                 fname: `John${i}`,
                 lname: `Doe${i}`,
                 age: Math.floor(Math.random() * 115),
@@ -98,7 +98,7 @@ module.exports = Seed.extend ({
         survey:
           dab.map(dab.get('accounts'), function (account) { //map maps each account to 1 entry
             return {
-              owner: account._id,
+              _id: account._id,
               drinker: !!Math.round(Math.random()), //!! means convert to boolean
               smoker: !!Math.round(Math.random()),  //i know js is weird
               recreationalDrugs: !!Math.round(Math.random()),
@@ -110,7 +110,7 @@ module.exports = Seed.extend ({
         directDeposit:
           dab.map(dab.get('accounts'), function(account) {
             return {
-              owner: account._id,
+              _id: account._id,
               CCV: random_nums_of_length(3),
               cardNumber: random_nums_of_length(16),
               routingNumber: random_nums_of_length(9),
@@ -120,7 +120,7 @@ module.exports = Seed.extend ({
         address:
           dab.map(dab.get('accounts'), function(account, i) {
             return {
-              owner: account._id,
+              _id: account._id,
               home: random_nums_of_length(4) + ' street name ' + i,
               city: `city${i}`,
               state: `state${i}`,
