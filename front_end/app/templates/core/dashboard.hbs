@@ -19,7 +19,12 @@
 
 <div>Each Post goes here
 {{#each model as |post|}}
-  {{#post-dashboard title=post.owner}}
+  {{#post-dashboard
+    image=post.image 
+    title=post.title
+    description=post.description
+    dateMade=post.dateMade
+    payRate=post.payRate}}
   {{/post-dashboard}}
 {{/each}}
 </div>
