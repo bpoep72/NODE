@@ -88,7 +88,7 @@ module.exports = Seed.extend ({
         post:
           dab.times(number_of_posts, function(i) {
             return {
-              description: `test post descption #${i}`,
+              description: `test post description #${i}`,
               owner: dab.ref(dab.sample(dab.get('accounts'))),
               title: `Test Post Title #${i}`,
               payType: payment_type[Math.floor(Math.random() * payment_type.length)],
