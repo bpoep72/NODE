@@ -33,13 +33,20 @@ module.exports = ResourceController.extend ({
   
   create()
   {
-    return Action.extend
-    ({
-      execute(req, res)
+    return function (req, res)
+    {
+      profile.create(req.body, function (error, profile)
       {
-        //TODO make this
-      }
-    });
+        if(error)
+        {
+          res.status(400).json(error);
+        }
+        else
+        {
+          profile.owner = req.user.id;
+        }
+      });
+    };
   }
   
 });
