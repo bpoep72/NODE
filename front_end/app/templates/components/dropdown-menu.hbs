@@ -1,44 +1,29 @@
-<div class="button-dashboard">
-  {{#dropdown-menu-button 
-    title='Dashboard'
-    target='core.dashboard'
-    select=(action 'retract')}}
-      <img class="icon-image" src="../assets/dashboard_icon.svg">
-  {{/dropdown-menu-button}}
-</div>
+{{#dropdown-menu-button 
+  target='core.dashboard'
+  select=(action 'retract')}}
+    <img class="icon-image" src="../assets/dashboard_icon.svg">
+{{/dropdown-menu-button}}
 
-<div class="button-calendar">
-  {{#dropdown-menu-button 
-    title='Calendar'
-    target='core.calendar'
-    select=(action 'retract')}}
-      <img class="icon-calendar" src="../assets/calendar_icon.svg">
-  {{/dropdown-menu-button}}
-</div>
+{{#dropdown-menu-button 
+  target='core.calendar'
+  select=(action 'retract')}}
+    <img class="icon-calendar" src="../assets/calendar_icon.svg">
+{{/dropdown-menu-button}}
 
-<div class="button-account">
-  {{#dropdown-menu-button 
-    title='Account'
-    target='core.account'
-    select=(action 'retract')}}
-      <img class="icon-image" src="../assets/account_icon.svg">
-  {{/dropdown-menu-button}}
-</div>
+{{#dropdown-menu-button 
+  target='core.post'
+  select=(action 'retract')}}
+    <img class="icon-image" src="../assets/post_icon.svg">
+{{/dropdown-menu-button}}
 
-<div class="button-profile">
-  {{#dropdown-menu-button 
-    title='Profile'
-    target='core.profile'
-    select=(action 'retract')}}
-      <img class="icon-image" src="../assets/profile_icon.svg">
-  {{/dropdown-menu-button}}
-</div>
+{{#dropdown-menu-button 
+  target='core.profile'
+  select=(action 'retract')}}
+    <img class="icon-image" src="../assets/profile_icon.svg">
+{{/dropdown-menu-button}}
 
-<div class="button-post">
-  {{#dropdown-menu-button 
-    title='Post'
-    target='core.post'
-    select=(action 'retract')}}
-      <img class="icon-image" src="../assets/post_icon.svg">
-  {{/dropdown-menu-button}}
-</div>
+{{#dropdown-menu-button 
+  target='core.account'
+  select=(action 'retract')}}
+    <img class="icon-image" src="../assets/account_icon.svg">
+{{/dropdown-menu-button}}
