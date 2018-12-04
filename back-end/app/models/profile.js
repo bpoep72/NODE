@@ -10,7 +10,6 @@ const schema = new Schema ({
 	orientation: {type: String, required:false},
 	height: {type: String, required:false},
     weight: {type: String, required:false},
-    owner: {type: String, required: true}
 });
 
 module.exports = mongodb.resource ('profile', schema);

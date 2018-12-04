@@ -12,9 +12,18 @@
  ***********************************************/
 
 import Route from '@ember/routing/route';
+import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 
-export default Route.extend( {
+export default Route.extend(Authenticated, {
+
+  beforeModel() {
+    this.controllerFor('core').set('header', 'Profile');
+  },
+
   model() {
-    this.controllerFor('core').set('header', 'Profile')
+    let currentUser = this.get('currentUser');
+
+    // make request for single record, where is is not known (use findRecord if id is known)
+    return this.get('store').findRecord('profile', ':' + currentUser.id);
   }
 });

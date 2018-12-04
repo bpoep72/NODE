@@ -7,7 +7,6 @@ const schema = new Schema ({
 	cardNumber: {type: String, required:true},
     issuer: {type: String, required: true},
     routingNumber: {type: String, required: true},
-    owner: {type: String, required: true}
 });
 
 module.exports = mongodb.resource ('directDeposit', schema);
