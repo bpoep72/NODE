@@ -28,9 +28,9 @@ export default Route.extend( {
       let controller = this.get('controller');
 
       let image = controller.get('image')
-      let title = controller.get('title')
-      let description = controller.get('description')
-      let comments = controller.get('comments')
+      let owner = controller.get('owner')
+      let content = controller.get('content')
+      let dateMade = controller.get('dateMade')
 /*
       let currentUser = this.get('currentUser');
       this.store.findRecord('profile', ':' + currentUser.id).then(function(prof){
