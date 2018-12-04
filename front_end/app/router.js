@@ -48,7 +48,7 @@ Router.map(function() {
   this.route('core', function() {
     this.route('dashboard');
     this.route('profile');
-    this.route('post');
+    this.route('post', { path: '/post/:post_id'});
     this.route('account');
     this.route('calendar');
   });

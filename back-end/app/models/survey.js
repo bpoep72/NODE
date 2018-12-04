@@ -10,7 +10,6 @@ const schema = new Schema ({
 	maritalStatus: {type: String},
 	children: {type: Number},
     educationalLevel: {type: String},
-    owner: {type: String, required: true}
 });
 
 module.exports = mongodb.resource ('survey', schema);

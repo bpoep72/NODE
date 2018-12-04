@@ -13,9 +13,11 @@
 --}}
 <div id="topBar">NoDE Post Hamburger</div>
 <div id="body">Post Information<br>
-  <div>Post Picture</div>
-  <div>Post Headline</div>
-  <div>Post body</div>
+  <div>{{model.image}}</div>
+  <div>{{model.title}}</div>
+  <div>{{model.description}}</div>
+  <div>{{model.payRate}}</div>
+  <div>{{model.dateMade}}</div>
   {{outlet}}</div>
 <div id="footer">Footer placeholder - User Actions<br>
   <button>Accept</button><br>

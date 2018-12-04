@@ -12,7 +12,7 @@ module.exports = ResourceController.extend ({
     return function(req, res)
     {
       {
-        profile.findOne({ owner: req.user._id, }, function(error, profile)
+        profile.findOne({ _id: req.user._id, }, function(error, profile)
         {
           if(error) //some server error
           {
@@ -33,13 +33,20 @@ module.exports = ResourceController.extend ({
   
   create()
   {
-    return Action.extend
-    ({
-      execute(req, res)
+    return function (req, res)
+    {
+      profile.create(req.body, function (error, profile)
       {
-        //TODO make this
-      }
-    });
+        if(error)
+        {
+          res.status(400).json(error);
+        }
+        else
+        {
+          profile.owner = req.user.id;
+        }
+      });
+    };
   }
   
 });
