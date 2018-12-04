@@ -20,6 +20,7 @@
 <div>Each Post goes here
 {{#each model as |post|}}
   {{#post-dashboard
+    id=post.id
     image=post.image 
     title=post.title
     description=post.description
