@@ -6,6 +6,7 @@ var number_of_posts = 80; //will randomly assign owners
 
 var marital_statuses = ['single', 'married', 'divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
+var payment_type = ['Non disclosed', 'Per Visit', 'Per Completion', 'Per Hour'];
 
 
 /* Purpose: generates a random string of numbers 0-9 of the input lenght.
@@ -27,6 +28,15 @@ function random_nums_of_length(length)
     output += Math.floor(Math.random() * 10).toString();
   }
   return output;
+}
+
+function random_date()
+{
+  var output = new Date();
+  output.setYear(2018 + Math.floor(Math.random() * 3));
+  output.setDate(Math.floor(Math.random() * 28));
+  output.setMonth(Math.floor(Math.random() * 12));
+  return output.toISOString();
 }
 
 /**
@@ -81,6 +91,10 @@ module.exports = Seed.extend ({
               description: `test post descption #${i}`,
               owner: dab.ref(dab.sample(dab.get('accounts'))),
               title: `Test Post Title #${i}`,
+              payType: payment_type[Math.floor(Math.random() * payment_type.length)],
+              payRate: Math.floor(Math.random() * 150),
+              rating: Math.floor(Math.random() * 5),
+              endDate: random_date(),   
             };
           }),
         profile:
