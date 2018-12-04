@@ -36,24 +36,13 @@ Router.map(function() {
     this.route('user-information');
     this.route('create-account');
   });
-  //  this.route('signup');
 
   this.route('onboarding', function() {
-
-    this.route('survey', function() {
-      this.route('payment');
-      this.route('lifestyle', function() {
-        this.route('index');
-        this.route('alcohol');
-        this.route('medical');
-        this.route('education');
-        this.route('smoking');
-        this.route('marital');
-        this.route('diet');
-        this.route('drugs');
-        this.route('children');
-      });
-    });
+    this.route('profile');
+    this.route('lifestyle');
+    this.route('medical');
+    this.route('education');
+    this.route('payment');
   });
 
   this.route('core', function() {
@@ -63,7 +52,6 @@ Router.map(function() {
     this.route('account');
     this.route('calendar');
   });
-  //  this.route('core');
 
   this.route('reset-password');
 });
