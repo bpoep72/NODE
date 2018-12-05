@@ -21,10 +21,8 @@ export default Route.extend(Authenticated, {
   },
 
   model() {
-
     let currentUser = this.get('currentUser');
-    this.controllerFor('core.profile').set('currentUserID', currentUser.id);
-
+    // should handle errors with profile lookup
     return this.store.findRecord('profile', currentUser.id);
   },
 

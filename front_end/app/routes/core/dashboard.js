@@ -13,9 +13,21 @@
  *      delimiting them by user
  ***********************************************/
 import Route from '@ember/routing/route';
+import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 
-export default Route.extend( {
+export default Route.extend(Authenticated, {
   beforeModel() {
+    // Check if user has created their profile yet, if not redirect to Onboarding
+    let currentUser = this.get('currentUser');
+
+    // it's async call, so route continues to render page before catching error
+    // maybe should halt that, but could slow experience for users who have profiles already
+    this.store.findRecord('profile', currentUser.id).catch((err) => {
+      console.log("error = ", err)
+      //should probably handle error better, but works for our purpose
+      this.transitionTo('onboarding.profile');
+    })
+
     this.controllerFor('core').set('header', 'Dashboard');
   },
   model() {
