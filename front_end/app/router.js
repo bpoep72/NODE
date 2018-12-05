@@ -39,7 +39,15 @@ Router.map(function() {
 
   this.route('onboarding', function() {
     this.route('profile');
-    this.route('lifestyle');
+    this.route('lifestyle', function() {
+      this.route('start');
+      this.route('drink');
+      this.route('smoke');
+      this.route('drugs');
+      this.route('diet');
+      this.route('married');
+      this.route('children');
+    });
     this.route('medical');
     this.route('education');
     this.route('payment');

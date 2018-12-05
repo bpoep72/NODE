@@ -6,7 +6,7 @@ export default Controller.extend( Authenticated, {
   actions: {
     continue() {
       // check if user filled out all fields?
-      
+      console.log('continue action in onboarding/profile Controller')
       // validate data... on back-end?
 
       // create the profile record and persist to database
