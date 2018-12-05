@@ -6,12 +6,11 @@ export default Controller.extend( Authenticated, {
   actions: {
     continue() {
       // check if user filled out all fields?
-      console.log("First Name: ", this.fname);
+      
+      // validate data... on back-end?
 
       // create the profile record and persist to database
       let currentUser = this.get('currentUser');
-
-      console.log("Current User ID: ", currentUser.id);
 
       this.store.createRecord( 'profile', {
         id: currentUser.id,

@@ -3,7 +3,7 @@
 .hamburger-menu {
   height: 65px;
   width: 75px;
-  position: absolute;
+  position: fixed;
   background-color: #80d0d6;
   z-index: 99 !important; // !important doesn't seem to be necessary
   -webkit-transition: all 0.2s ease-out; /* Safari */
@@ -13,7 +13,7 @@
 .hamburger-menu-open {
   height: 65px;
   width: 75px;
-  position: absolute;
+  position: fixed;
   background-color: #f7a09b;
   z-index: 99 !important; // !important doesn't seem to be necessary
   -webkit-transition: all 0.2s ease-out; /* Safari */
