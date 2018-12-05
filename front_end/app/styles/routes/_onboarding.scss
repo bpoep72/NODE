@@ -2,7 +2,15 @@
 
 .route__onboarding {
 
-  .title {
+  .text {
+    font-family: urw-din, sans-serif;
+    font-weight: bold;
     text-align: center;
+    color: #4E595A;
+  }
+
+  .title {
+    font-size: 21px;
+    text-transform: uppercase;
   }
 }
