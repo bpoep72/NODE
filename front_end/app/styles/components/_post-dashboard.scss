@@ -2,4 +2,67 @@
 
 .post-dashboard {
 
+    background-color: blue;
+
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100vw;
+        height: 132px;
+        margin: 0px;
+        background-color: #f0f8f8;
+        grid-template-areas:
+            "image body";
+
+        box-shadow: 0 1px 10px 0 rgb(0 0 0.25);
+
+        .image {
+            grid-area: image;
+            background-image: url('/assets/post_image2.png');
+            width: 124.8px;
+            height: 132px;
+        }
+
+        .body {
+            grid-area: body;
+
+            .title {
+                position: absolute;
+                height: 30.5px;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: URW DIN;
+                margin-left: 9.6px;
+                margin-top: 17.3px;
+                color: #4e595a;
+            }
+    
+            .description {
+                position: absolute;
+                margin-left: 9.6px;
+                margin-top: 57.3px;
+                font-size: 12px;
+                color: #4e595a;
+            }
+
+            .dateMade {
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 9.6px;
+                color: #4e595a;
+            }
+
+            .payRate {
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 170px;
+                color: #4e595a;
+            }
+
+        }
+
+        
+    }
+
+
 }

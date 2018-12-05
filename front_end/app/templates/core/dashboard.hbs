@@ -14,11 +14,12 @@
 * - 04 Dec 2018 (bwp) - added button to transition to core/post route
 *   (TODO: At this point, still need to tie the correct post to the component)
 *   (TODO: /core/post page needs to be built out with component or field data)
+* - 04 Dec 2018 (aib) - Removed unnecessary labels
 ***********************************************/
 --}}
-<div id="topBar">NoDE Dashboard Hamburger</div>
+<div id="topBar"></div>
 
-<div>Each Post goes here
+<div>
 {{#each model as |post|}}
   {{#post-dashboard
     id=post.id
@@ -30,7 +31,7 @@
   {{/post-dashboard}}
 {{/each}}
 </div>
-<div id="footer">Footer placeholder</div>
+<div id="footer"></div>
 
 <button {{action "updateDashboard"}}>Update Postings</button>
 <button onclick={{action "signOut"}}>Sign Out</button>
