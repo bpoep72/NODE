@@ -30,23 +30,5 @@ module.exports = ResourceController.extend ({
       }
     };
   },
-  
-  create()
-  {
-    return function (req, res)
-    {
-      profile.create(req.body, function (error, profile)
-      {
-        if(error)
-        {
-          res.status(400).json(error);
-        }
-        else
-        {
-          profile.owner = req.user.id;
-        }
-      });
-    };
-  }
-  
+
 });
