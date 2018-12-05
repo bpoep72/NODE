@@ -12,7 +12,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  dateMade: DS.attr('date').______getType,
+  dateMade: DS.attr('date'),
   description: DS.attr(''),
   owner: DS.attr('string'),
   title: DS.attr('string'),
