@@ -8,13 +8,14 @@
 * Modification History:
 * - 28 Nov 2018 (bwp) - Initial build
 * - 03 Dec 2018 (bwp) - fixed comments
+* - 04 Dec 2018 (AIB) - Styling the component
 ***********************************************/
 --}}
-<article class="post">
+{{!-- <article class="post">
   <table border="1" width="90%">
     <tbody>
     <tr align="center">
-      <td border="1">{{image}}Image</td>
+      <td border="1">{{image}}</td>
       <td>
         <table>
           <tr>
@@ -32,4 +33,18 @@
     </tr>
     </tbody>
   </table>
-</article>
+</article> --}}
+
+<div class="post">
+  <div class="image">{{image}}</div>
+  <div class="body">
+    <div class="title">{{title}}</div>
+    <div class="description">{{description}}</div>
+    <div class="dateMade">Ends 11/10/2018{{dateMade}}</div> 
+    {{!-- I changed words from "Created On" to "Ends"
+    However the date being displayed is just whatever
+    date we are getting from the db. Not sure what the
+    datamodel is actually looking for? --}}
+    <div class="payRate">${{payRate}}</div>
+  </div>
+</div>

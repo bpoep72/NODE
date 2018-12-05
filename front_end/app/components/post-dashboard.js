@@ -12,6 +12,7 @@ import { inject as service } from '@ember/service';
 
 export default Component.extend({
   router: service(),
+  classNames: ['post-dashboard'],
 
   click() {
     this.get('router').transitionTo('/core/post/' + this.id)
