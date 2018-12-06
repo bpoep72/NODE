@@ -137,7 +137,7 @@ module.exports = Seed.extend ({
               recreationalDrugs: !!Math.round(Math.random()),
               healthyDiet: Math.floor(Math.random() * 5),
               maritalStatus: marital_statuses[Math.floor(Math.random() * marital_statuses.length)], //pick one at random
-              children: Math.floor(Math.random() * 90),
+              children: Math.floor(Math.random() * 16),
             };
           }),
         directDeposit:
