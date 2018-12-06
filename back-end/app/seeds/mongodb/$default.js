@@ -166,8 +166,8 @@ module.exports = Seed.extend ({
             return {
               _id: account._id,
               home: random_nums_of_length(4) + faker.fake(" {{address.streetName}} {{address.streetSuffix}}"),
-              city: `city${i}`,
-              state: `state${i}`,
+              city: faker.fake("{{address.city}}"),
+              state: faker.fake("{{address.state}}"),
             };
           }),
     };
