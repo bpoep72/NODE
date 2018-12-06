@@ -1,3 +1,13 @@
+/************************************************
+ * Application:  directDeposit.js
+ * File:  app/models/directDeposit.js
+ * Author: Jose
+ * Purpose:
+ *	To define the direct deposit schema for mongodb
+ *
+ * Licensing Information
+ ***********************************************/
+
 const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
