@@ -94,7 +94,7 @@ module.exports = Seed.extend ({
               payType: payment_type[Math.floor(Math.random() * payment_type.length)],
               payRate: Math.floor(Math.random() * 150),
               rating: Math.floor(Math.random() * 5),
-              endDate: random_date(),   
+              endDate: random_date(),
             };
           }),
         profile:
@@ -106,8 +106,8 @@ module.exports = Seed.extend ({
                 age: Math.floor(Math.random() * 115),
                 ethnicity: `ethnicity${i}`,
                 orientation: `orientation${i}`,
-                height: Math.floor(Math.random() * 250) + "cm",
-                weight: Math.floor(Math.random() * 115) + "kg",
+                height: 32 + Math.floor(Math.random() * 68) + "in",
+                weight: 40 + Math.floor(Math.random() * 210) + "lbs",
               };
           }),
         survey:
@@ -144,4 +144,3 @@ module.exports = Seed.extend ({
     };
   }
 });
-      
