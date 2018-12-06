@@ -16,10 +16,12 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  userName: DS.attr('string'),
-  passWord: DS.attr('string'),
-  profile: DS.hasOne('profile'),
-  address: DS.hasOne('address'),
-  survey: DS.hasOne('survey')
-
+  username: DS.attr('string'),
+  password: DS.attr('string'),
+  email: DS.attr('string')
+  
+  // Peter: I think this is only if we're actually storing these within the user
+/*   profile: DS.belongsTo('profile'),
+  address: DS.belongsTo('address'),
+  survey: DS.belongsTo('survey') */
 });

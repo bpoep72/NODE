@@ -1,3 +1,4 @@
+{{!--
 /* Application:  NOD
 * File:  app/templates/components/post-dashboard.js
 * Author: Bard Polley
@@ -6,29 +7,22 @@
 * Purpose: Component for use in dashboard GUI (HTML/Handlebar script
 * Modification History:
 * - 28 Nov 2018 (bwp) - Initial build
+* - 03 Dec 2018 (bwp) - fixed comments
+* - 04 Dec 2018 (AIB) - Styling the component
 ***********************************************/
-<article class="post-dashboard">
-  <table>
-    <tbody>
-    <tr align="center">
-      <td>{{post.image}}</td>
-      <td>
-        <table>
-          <tr>
-            <td colspan="2">{{post.title}}</td>
-          </tr>
-          <tr>
-            <td colspan="2">{{post.description}}</td>
-          </tr>
-          <tr>
-            <td>{{post.endDate}}</td>
-            <td>
-            </td>{{post.payRate}}</tr>
-        </table>
-      </td>
-    </tr>
-    </tbody>
-  </table>
+--}}
 
-</article>
-{{yield}}
+
+<div class="post">
+  <div class="image">{{image}}</div>
+  <div class="body">
+    <div class="title">{{title}}</div>
+    <div class="description">{{description}}</div>
+    <div class="dateMade">Ends {{moment-format dateMade 'MM/DD/YYYY'}}</div> 
+    {{!-- I changed words from "Created On" to "Ends"
+    However the date being displayed is just whatever
+    date we are getting from the db. Not sure what the
+    datamodel is actually looking for? --}}
+    <div class="payRate">${{payRate}}</div>
+  </div>
+</div>

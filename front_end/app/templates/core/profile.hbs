@@ -27,4 +27,21 @@
   <button>Update Account Info</button><br>
   <button>Update Payment Info</button><br>
   <button>Take the Lifestyle Survey Again</button>
+
+  <br><br>
+  <p>Update Profile</p>
+
+  {{input value=fname placeholder="First Name"}}
+  {{input value=lname placeholder="Last Name"}}
+  {{input type=number value=age placeholder="Age"}}
+  {{input value=ethnicity placeholder="Ethnicity"}}
+  {{input value=orientation placeholder="Orientation"}}
+  {{input value=height placeholder="Height(cm)"}}
+  {{input value=weight placeholder="Weight(kg)"}}
+
+  <br>
+
+  {{#nod-button title="Apply" submit=(action "updateProfile")}}
+  {{/nod-button}}
+
 </div>

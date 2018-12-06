@@ -12,28 +12,12 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+
   actions: {
     signOut () {
       this.get ('session').signOut ().then (() => {
         this.replaceRoute ('login');
       });
     },
-
-    executeProfile() {
-      this.transitionToRoute('core.profile');
-    },
-
-    executeAccount() {
-      this.transitionToRoute('core.account');
-    },
-
-    executeCalendar() {
-      this.transitionToRoute('core.calendar');
-    },
-
-    executePost() {
-      this.transitionToRoute('core.post');
-    }
-
   }
 });

@@ -1,0 +1,40 @@
+// route: progress-indicator
+
+.progress-indicator {
+
+  .bar {
+    height: 5px;
+    width: 75%;
+    background-color: #80d0d6;
+    vertical-align: middle;
+    position: absolute;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    bottom: 70px;
+    left: 50%;
+  }
+
+  .bubble-container {
+    height: 45px;
+    width: 93%;
+  
+    position: absolute;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    bottom: 50px;
+    left: 50%;
+  
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+  
+    justify-items: center;
+    align-items: center;
+  }
+
+}
+
+.progress-indicator-hidden {
+  display: none;
+}

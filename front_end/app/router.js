@@ -36,34 +36,30 @@ Router.map(function() {
     this.route('user-information');
     this.route('create-account');
   });
-  //  this.route('signup');
 
   this.route('onboarding', function() {
-
-    this.route('survey', function() {
-      this.route('payment');
-      this.route('lifestyle', function() {
-        this.route('index');
-        this.route('alcohol');
-        this.route('medical');
-        this.route('education');
-        this.route('smoking');
-        this.route('marital');
-        this.route('diet');
-        this.route('drugs');
-        this.route('children');
-      });
+    this.route('profile');
+    this.route('lifestyle', function() {
+      this.route('start');
+      this.route('drink');
+      this.route('smoke');
+      this.route('drugs');
+      this.route('diet');
+      this.route('married');
+      this.route('children');
     });
+    this.route('medical');
+    this.route('education');
+    this.route('payment');
   });
 
   this.route('core', function() {
     this.route('dashboard');
     this.route('profile');
-    this.route('post');
+    this.route('post', { path: '/post/:post_id'});
     this.route('account');
     this.route('calendar');
   });
-  //  this.route('core');
 
   this.route('reset-password');
 });

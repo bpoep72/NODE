@@ -28,7 +28,7 @@
         border-radius: 100px;
         height: 23px;
         width: 320px;
-        box-shadow: 0 1px 10px rgb(0, 0, 0.25);
+        box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     #ember248 {
@@ -39,18 +39,20 @@
         border-radius: 100px;
         height: 23px;
         width: 320px;
-        box-shadow: 0 1px 10px rgb(0, 0, 0.25);
+        box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     #ember254 {
         background-color: #fbcfcd;
         color: #584b4b;
-        font-size: 11px bold;
-        font-family: URW DIN;
-
+        font-size: 11px;
+        font-weight: bold;
+        font-family: urw-din, sans-serif;
+        letter-spacing: 1px;
         width: 319px;
         height: 48px;
         border-radius: 100px;
+        box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.25);
     }
 
     .login-entry {
@@ -71,58 +73,59 @@
             background-color: #80d0d6;
             text-align: center;
             vertical-align: middle;
-            // font-family: URWDIN;
-            // font-size: 11px;
-            // font-weight: bold;
-            // font-style: normal;
-            // font-stretch: normal;
-            // line-height: normal;
-            // letter-spacing: 1px;
+            line-height: 48px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            font-family: urw-din, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration-line: unset;
             color: #faf3f2;
+            box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.25);
         }
             
 
         .reset-text {
             position: absolute;
+            -webkit-transform: translate(-90%, 0%);
+            -moz-transform: translate(-90%, 0%);
+            transform: translate(-90%, 0%);
+            left: 50%;
             color: #faf3f2;
+            font-size: 14px;
         }
 
         .reset-password-btn-box {
 
-            z-index: 100;
-            margin-left: 100px;
             position: absolute;
+            -webkit-transform: translate(-50%, 0%);
+            -moz-transform: translate(-50%, 0%);
+            transform: translate(18%, 0%);
+            left: 50%;
 
             .reset-password-btn {
                 width: 86px;
                 height: 17px;
                 text-transform: uppercase;
-                font-family: URWDIN;
+                font-family: urw-din, sans-serif;
                 color: #fbcfcd;
                 
             }
 
         }
 
+        #ember263 { // Click here
+            font-family: urw-din, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-decoration-line: underline;
+        }
         
     }
-
-    // .register-btn {
-
-    //     background-color: #80d0d6;
-    //     width: 319px;
-    //     height: 48px;
-    //     border-radius: 100px;
-
-    // }
 
     #ember253 {
         height: 65px;
     }
-
-    #ember263 {
-        
-    }
-
 
 }
