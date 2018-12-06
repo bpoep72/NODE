@@ -1,16 +1,36 @@
+
+/************************************************
+ * Application:  $default.js
+ * File:  /app/seeds/mongodb/$default.js
+ * Author: Bryce Poeppel
+ * Creation Date: yyyy-mmm-dd, dd mmm yyyy
+ * Feature: Dummy Data generation
+ * Purpose:
+ *     To generate dummy data for display and use on the front
+ *      end of the application.
+ * Related files:
+ *    /app/configs/mongodb.js - where the connections string to the server is
+ *    /models/* - where the models are defined
+ * Dependency:
+ *    @onehilltech/blueprint-mongodb
+ *    @onehilltech/dab
+ *    faker
+ * Licensing Information
+ ***********************************************/
+
 const { Seed } = require ('@onehilltech/blueprint-mongodb');
 const dab = require ('@onehilltech/dab');
 var faker = require('faker');
 
-var number_of_accounts = 5;
-var number_of_posts = 80; //will randomly assign owners
+var number_of_accounts = 5; //default number of accounts
+var number_of_posts = 80; /* number of posts to make, randomly assigned to accounts */
 
+/* START ARRAYS FOR GENERATION */
 var marital_statuses = ['Single', 'Married', 'Divorced'];
 var card_issuers = ['Visa', 'Discover', 'American Express', 'Mastercard'];
 var payment_types = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
 var bank_names = ['Fifth Third', 'Chase', 'PNC', 'Bank of America', 'KeyBank'];
 var drinks = ['0', '1-2', '3-6', '7+'];
-
 
 var post_descriptions = [`This pilot project evaluates the effectiveness of a participatory music program for Veterans cared for in the Domiciliary Care for Homeless Veterans (DCHV) Program (Indianapolis, IN) in terms of improving quality of life. A secondary goal of this study is to evaluate the effect of the participatory music program on community reintegration and healthcare utilization.`,
                         `Prolonged alcohol use results in drinking despite resultant problems and adverse consequences. The investigators propose to test a laboratory model of human seeking despite aversion to use as an early marker of disease onset, and as a tool for study of its neural functional substrates, and identification of effective treatments.`,
@@ -19,7 +39,7 @@ var post_descriptions = [`This pilot project evaluates the effectiveness of a pa
                         `To decrease emotional self-awareness deficits and improve emotional self-regulation, particularly anxiety, anger, depression, and positive affect, through the treatment of alexithymia.`,
                         `Chronic pain is now widely understood to be due to central sensitization, which leads to exaggerated pain perception. There is early evidence that ActiPatch can help mitigate the sensitization of the trigeminovascular pain pathway, so this study is being conducted to determine the efficacy of ActiPatch in preventing chronic, episodic migraines.`,
                         `DDM is a study designed to Test the efficacy of personalized music therapy in reducing delirium incidence and severity among patients admitted to the Intensive Care Unit.`,
-                      ]
+                        ];
 
 var post_titles = [`Participatory Music Program for Homeless Veterans`,
                    `Human Alcohol Seeking Despite Aversion`,
@@ -28,19 +48,18 @@ var post_titles = [`Participatory Music Program for Homeless Veterans`,
                    `Training to Reconnect With Emotional Awareness Therapy (TREAT)`,
                    `Migraine Prevention Using ActiPatch (PSWT)`,
                    `Decreasing Delirium Through Music (DDM)`,
-                  ]
+                  ];
 
-/* Purpose: generates a random string of numbers 0-9 of the input lenght.
- * Helpful for generating fake data in the directDeposit and address models.
- * Also I looked for a library for 5secs didn't find one, thus I made this
- * as is the js way.
- * Params:
- *  {int} length :
- *    the desired output length
- * Returns:
- *  {string} output :
- *    the generated output
- */
+/* END OF ARRAYS FOR GENERATION */
+
+/************************************************
+ * Function:  random_nums_of_length
+ * Purpose: generate a string of random numbers of the given length
+ * Input Parameter(s):
+ *  - length - The length of the desired output
+ * Return / Output Parameter(s):
+ *  - output - A String of random numbers
+ ***********************************************/
 function random_nums_of_length(length)
 {
   var output = "";
@@ -51,6 +70,15 @@ function random_nums_of_length(length)
   return output;
 }
 
+/************************************************
+ * Function:  random_date
+ * Purpose: generate a random date for the endDate field
+            of the post model.
+ * Input Parameter(s):
+ *
+ * Return / Output Parameter(s):
+ *  - output - An ISO date string
+ ***********************************************/
 function random_date()
 {
   var output = new Date();
@@ -66,6 +94,7 @@ function random_date()
 module.exports = Seed.extend ({
   model () {
     return {
+        //default token generator client
         native:
         [{
             _id: dab.id('6bf5aef6859eab3befe6bd45'),
@@ -74,6 +103,7 @@ module.exports = Seed.extend ({
             client_secret: 'sstssh',
             scope: ['gatekeeper.account.create'],
         }],
+        //the default accounts
         accounts:
           dab.times(number_of_accounts, function(i) {
               return {
@@ -84,6 +114,7 @@ module.exports = Seed.extend ({
                  enabled: true,
               };
             }),
+        //defines how access tokens should look
         user_tokens:
             dab.map(dab.get('accounts'), function(account) {
               return {
@@ -93,6 +124,7 @@ module.exports = Seed.extend ({
                 scope: ['gatekeeper.account.create'],
               };
             }),
+        //for google recaptcha (not implemented)
         recaptcha:
         [{
             name: 'recaptcha',
@@ -101,12 +133,14 @@ module.exports = Seed.extend ({
             scope: ['gatekeeper.account.create'],
             origin: 'http://localhost',
         }],
+        //needed for token generator
         client_tokens:
         [{
             client: dab.ref ('native.0'),
             scope: ['gatekeeper.account.create'],
         }],
         post:
+          //generate number_of_posts random posts and assign them owners randomly
           dab.times(number_of_posts, function() {
             //the post that this db entry will use
             post_number = Math.floor(Math.random() * post_descriptions.length);
@@ -132,6 +166,7 @@ module.exports = Seed.extend ({
             };
           }),
         profile:
+          //for each account map a random profile document
           dab.map(dab.get('accounts'), function (account, i) {
               return {
                 _id: account._id,
@@ -145,6 +180,7 @@ module.exports = Seed.extend ({
               };
           }),
         survey:
+          //for each account map a random survey document
           dab.map(dab.get('accounts'), function (account) { //map maps each account to 1 entry
             return {
               _id: account._id,
@@ -157,6 +193,7 @@ module.exports = Seed.extend ({
             };
           }),
         directDeposit:
+        //for each account map a random direct deposit document
           dab.map(dab.get('accounts'), function(account) {
             return {
               _id: account._id,
@@ -167,6 +204,7 @@ module.exports = Seed.extend ({
               bankName: bank_names[Math.floor(Math.random() * bank_names.length)],
             };
           }),
+        //for each account map a random address document
         address:
           dab.map(dab.get('accounts'), function(account, i) {
             return {
