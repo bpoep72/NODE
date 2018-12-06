@@ -39,31 +39,16 @@ export default Route.extend(Authenticated, {
       let weight = controller.get('weight')
 
       let currentUser = this.get('currentUser');
-      this.store.findRecord('profile', ':' + currentUser.id).then(function(prof){
-        if(fname) prof.set('fname', fname);
-        if(lname) prof.set('lname', lname);
-        if(age) prof.set('age', age); // need to validate as # somewhere
-        if(ethnicity) prof.set('ethnicity', ethnicity);
-        if(orientation)  prof.set('orientation', orientation);
-        if(height)  prof.set('height', height);
-        if(weight)  prof.set('weight', weight);
-        prof.save(); // => PATCH to '/profiles/1' ???
-      }) 
-
-      // attempt at creating a new record in the store and persisting to db
-
-/*       let newProfile = this.store.createRecord( 'profile', {
-        owner: '5c05c20dec78477db379bacc',
-        fname: 'test',
-        lname: 'test',
-        age: 0,
-        ethnicity: 'test',
-        orientation: 'test',
-        height: 'test',
-        weight: 'test',
-      }).save(); */
-    
-      
+      this.store.findRecord('profile', currentUser.id).then(function(profile){
+        if(fname) profile.set('fname', fname);
+        if(lname) profile.set('lname', lname);
+        if(age) profile.set('age', age); // need to validate as # somewhere
+        if(ethnicity) profile.set('ethnicity', ethnicity);
+        if(orientation)  profile.set('orientation', orientation);
+        if(height)  profile.set('height', height);
+        if(weight)  profile.set('weight', weight);
+        profile.save(); // => PATCH to '/profiles/1'
+      })    
     }
   }
 

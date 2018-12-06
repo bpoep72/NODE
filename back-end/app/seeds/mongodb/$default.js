@@ -7,6 +7,7 @@ var number_of_posts = 80; //will randomly assign owners
 var marital_statuses = ['single', 'married', 'divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
 var payment_type = ['Non disclosed', 'Per Visit', 'Per Completion', 'Per Hour'];
+var bank_names = ['Fifth Third', 'Chase', 'PNC', 'Bank of America', 'KeyBank'];
 
 
 /* Purpose: generates a random string of numbers 0-9 of the input lenght.
@@ -126,10 +127,9 @@ module.exports = Seed.extend ({
           dab.map(dab.get('accounts'), function(account) {
             return {
               _id: account._id,
-              CCV: random_nums_of_length(3),
-              cardNumber: random_nums_of_length(16),
+              bankName: bank_names[Math.floor(Math.random() * card_issuer.length)],
+              accountNumber: random_nums_of_length(10),
               routingNumber: random_nums_of_length(9),
-              issuer: card_issuer[Math.floor(Math.random() * card_issuer.length)],
             };
           }),
         address:
