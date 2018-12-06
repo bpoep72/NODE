@@ -110,7 +110,7 @@ module.exports = Seed.extend ({
               owner: dab.ref(dab.sample(dab.get('accounts'))),
               title: post_titles[i],
               payType: payment_type[Math.floor(Math.random() * payment_type.length)],
-              payRate: Math.floor(Math.random() * 150),
+              payRate: Math.floor(Math.random() * 80),
               rating: Math.floor(Math.random() * 5),
               endDate: random_date(),
             };
