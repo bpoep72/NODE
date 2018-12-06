@@ -1,12 +1,12 @@
 const { model, Action } = require ('@onehilltech/blueprint');
 const { ResourceController } = require ('@onehilltech/blueprint-mongodb');
 
-const profile = require('../models/profile'); 
+const profile = require('../models/profile');
 
 module.exports = ResourceController.extend ({
   Model: model ('profile'),
   name: 'profileController',
-  
+
   getOne()
   {
     return function(req, res)

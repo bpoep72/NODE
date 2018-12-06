@@ -1,3 +1,12 @@
+/************************************************
+ * Application:  survey.js
+ * File:  app/models/survey.js
+ * Author: Jose
+ * Purpose: To define the survey schema
+ *
+ * Licensing Information
+ ***********************************************/
+
 const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
@@ -9,7 +18,7 @@ const schema = new Schema ({
 	healthyDiet: {type: Number},
 	maritalStatus: {type: String},
 	children: {type: Number},
-    educationLevel: {type: String},
+  educationalLevel: {type: String},
 });
 
 module.exports = mongodb.resource ('survey', schema);

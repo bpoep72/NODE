@@ -1,3 +1,13 @@
+/************************************************
+ * Application:  post.js
+ * File:  app/models/post
+ * Author: Bryce Poeppel
+ * Purpose:
+ *  To define the post schema for mongodb
+ *
+ * Licensing Information
+ ***********************************************/
+
 const mongodb = require ('@onehilltech/blueprint-mongodb');
 const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
@@ -13,7 +23,7 @@ const schema = new Schema ({
     endDate: {type: Date, },
     payType: {type: String, trim: true },
     payRate: {type: String, trim: true }
-    
+
 });
 
 module.exports = mongodb.resource ('post', schema);

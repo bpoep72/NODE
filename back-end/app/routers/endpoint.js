@@ -1,14 +1,20 @@
 
-/*
- *This file generates the core access points for items
- *accessable via the blueprint.js server side application.
- *Cors is utilized to enable requests across domains and
- *implemented using the Node.js Express.js library.
- *Additionally the site handles authentication of users
- *via the blueprint-gatekeeper.js library extension also
- *developed by @onehilltech github and is mounted on the
- * /gatekeeper directory.
- */
+/************************************************
+ * Application:  endpoint.js
+ * File:  app/routes/endpoint.js
+ * Author: Bryce Poeppel
+ * Purpose:
+ *    This file generates the core access points for items
+ *  accessable via the blueprint.js server side application.
+ *  Cors is utilized to enable requests across domains and
+ *  implemented using the Node.js Express.js library.
+ *  Additionally the site handles authentication of users
+ *  via the blueprint-gatekeeper.js library extension also
+ *  developed by @onehilltech github and is mounted on the
+ *  /gatekeeper directory.
+ *
+ * Licensing Information
+ ***********************************************/
 
 const blueprint = require ('@onehilltech/blueprint');
 const { Router } = blueprint;
@@ -25,7 +31,7 @@ const corsOptions = {
 module.exports = Router.extend ({
     specification :
     {
-        '/': //cors to enable use across all sub domains
+        '/': //cors at root to require use of cors across all sub domains
         {
             use: [cors(corsOptions)],
         },
@@ -81,5 +87,8 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             }
         }
+        /*
+         *end of gatekeeper protected routes
+         */
     }
 });
