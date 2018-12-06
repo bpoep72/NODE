@@ -197,9 +197,10 @@ module.exports = Seed.extend ({
           dab.map(dab.get('accounts'), function(account) {
             return {
               _id: account._id,
-              bankName: bank_names[Math.floor(Math.random() * card_issuer.length)],
+              CCV: random_nums_of_length(3),
               accountNumber: random_nums_of_length(10),
               routingNumber: random_nums_of_length(9),
+              cardNumber: random_nums_of_length(16),
               issuer: card_issuers[Math.floor(Math.random() * card_issuers.length)],
               bankName: bank_names[Math.floor(Math.random() * bank_names.length)],
             };
