@@ -8,6 +8,23 @@ var marital_statuses = ['single', 'married', 'divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
 var payment_type = ['Non disclosed', 'Per Visit', 'Per Completion', 'Per Hour'];
 
+var post_descriptions = [`This pilot project evaluates the effectiveness of a participatory music program for Veterans cared for in the Domiciliary Care for Homeless Veterans (DCHV) Program (Indianapolis, IN) in terms of improving quality of life. A secondary goal of this study is to evaluate the effect of the participatory music program on community reintegration and healthcare utilization.`,
+                        `Prolonged alcohol use results in drinking despite resultant problems and adverse consequences. The investigators propose to test a laboratory model of human seeking despite aversion to use as an early marker of disease onset, and as a tool for study of its neural functional substrates, and identification of effective treatments.`,
+                        `The purpose of this study is to prospectively follow a cohort of traumatically injured adolescents to identify patient-reported factors for sustained prescription opioid use, including chronic pain and mental health conditions by longitudinally surveying injured adolescents; and assess clinical, behavioral, and social predictors of prescription opioid misuse and nonmedical opioid use.`,
+                        `The investigators propose a randomized snack study in normal to overweight adults that will test whether the consumption of different afternoon snacks will have different effects on appetite, mood, blood sugar control, and food intake.`,
+                        `To decrease emotional self-awareness deficits and improve emotional self-regulation, particularly anxiety, anger, depression, and positive affect, through the treatment of alexithymia.`,
+                        `Chronic pain is now widely understood to be due to central sensitization, which leads to exaggerated pain perception. There is early evidence that ActiPatch can help mitigate the sensitization of the trigeminovascular pain pathway, so this study is being conducted to determine the efficacy of ActiPatch in preventing chronic, episodic migraines.`,
+                        `DDM is a study designed to Test the efficacy of personalized music therapy in reducing delirium incidence and severity among patients admitted to the Intensive Care Unit.`,
+                      ]
+
+var post_titles = [`Participatory Music Program for Homeless Veterans`,
+                   `Human Alcohol Seeking Despite Aversion`,
+                   `Opioid Use After Traumatic Injury in Adolescents`,
+                   `The Benefits of Consuming Hummus as an Afternoon Snack`,
+                   `Training to Reconnect With Emotional Awareness Therapy (TREAT)`,
+                   `Migraine Prevention Using ActiPatch (PSWT)`,
+                   `Decreasing Delirium Through Music (DDM)`,
+                  ]
 
 /* Purpose: generates a random string of numbers 0-9 of the input lenght.
  * Helpful for generating fake data in the directDeposit and address models.
@@ -86,11 +103,12 @@ module.exports = Seed.extend ({
             scope: ['gatekeeper.account.create'],
         }],
         post:
-          dab.times(number_of_posts, function(i) {
+          dab.times(number_of_posts, function() {
+            i = Math.floor(Math.random() * post_descriptions.length);
             return {
-              description: `test post description #${i}`,
+              description: post_descriptions[i],
               owner: dab.ref(dab.sample(dab.get('accounts'))),
-              title: `Test Post Title #${i}`,
+              title: post_titles[i],
               payType: payment_type[Math.floor(Math.random() * payment_type.length)],
               payRate: Math.floor(Math.random() * 150),
               rating: Math.floor(Math.random() * 5),
