@@ -1,12 +1,10 @@
-<div>
-  <a href="index">Previous - Survey Index</a><a href="smoking">Next - Survey (Smoking)</a>
-</div>
-<h2>How many drinks do you have per week?</h2>
-<form onSubmit="">
-  <input type="radio" id="zero" name="education"><label for="zero">0 / None</label><br>
-  <input type="radio" id="light" name="education"><label for="light">1 to 2</label><br>
-  <input type="radio" id="moderate" name="education"><label for="moderate">3 to 6</label><br>
-  <input type="radio" id="heavy" name="education"><label for="heavy">7 or more</label><br>
-</form>
 
-<button type="submit">Next Question</button>
+<h2>How many drinks do you have per week?</h2>
+{{#nod-button title="0" submit=(action "optionOne")}}
+{{/nod-button}}
+{{#nod-button title="1-2" submit=(action "optionTwo")}}
+{{/nod-button}}
+{{#nod-button title="3-6" submit=(action "optionThree")}}
+{{/nod-button}}
+{{#nod-button title="7+" submit=(action "optionFour")}}
+{{/nod-button}}

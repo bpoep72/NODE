@@ -1,8 +1,6 @@
-<div>
-  <a href="drugs">Previous - Survey (Drugs)</a><a href="marital">Next - Survey (Marital Status)</a>
-</div>
+
 <h2>Do you eat a healthy diet?</h2>
-<form onSubmit="">
-  <input type="range" id="healthyDiet" name="healthyDiet"><label for="healthyDiet">Yes</label><br>
-</form>
-<button type="submit">Next Question</button>
+
+{{input type="range" min="0" max="5" step="0.5" value=healthyDiet}}
+{{#nod-button title="Continue" submit=(action "continue")}}
+{{/nod-button}}

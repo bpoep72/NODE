@@ -1,11 +1,10 @@
-<div>
-  <a href="drugs">Previous - Survey (Drugs)</a><a href="children">Next - Survey (Children)</a>
-</div>
+
 <h2>What is your marital status?</h2>
-<form onSubmit="">
-  <input type="radio" id="statusSingle" name="maritalStatus"><label for="statusSingle">Never Married</label><br>
-  <input type="radio" id="statusMarried" name="maritalStatus"><label for="statusMarried">Married</label><br>
-  <input type="radio" id="statusDivorced" name="maritalStatus"><label for="statusDivorced">Divorced</label><br>
-  <input type="radio" id="statusSurvivor" name="maritalStatus"><label for="statusSurvivor">Widowed / Widowered</label><br>
-</form>
-<button type="submit">Next Question</button>
+{{#nod-button title="Never Married" submit=(action "optionOne")}}
+{{/nod-button}}
+{{#nod-button title="Married" submit=(action "optionTwo")}}
+{{/nod-button}}
+{{#nod-button title="Divorced" submit=(action "optionThree")}}
+{{/nod-button}}
+{{#nod-button title="Widowed" submit=(action "optionFour")}}
+{{/nod-button}}

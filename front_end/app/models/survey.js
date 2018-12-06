@@ -12,7 +12,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  drinker: DS.attr('boolean'),
+  drinks: DS.attr('string'),
   smoker: DS.attr('boolean'),
   recreationalDrugs: DS.attr('boolean'),
   healthyDiet: DS.attr('number'),

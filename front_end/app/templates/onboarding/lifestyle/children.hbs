@@ -1,11 +1,10 @@
-<div>
-  <a href="marital">Previous - Survey (Marital Status)</a><a href="medical">Next - Survey (Medical)</a>
-</div>
+
 <h2>How many children do you have?</h2>
-<form onSubmit="">
-  <input type="radio" id="zero" name="numberChildren"><label for="zero">None</label><br>
-  <input type="radio" id="small" name="numberChildren"><label for="small">1 to 2</label><br>
-  <input type="radio" id="medium" name="numberChildren"><label for="medium">3 to 4</label><br>
-  <input type="radio" id="large" name="numberChildren"><label for="large">5 or more</label><br>
-</form>
-<button type="submit">Next Question</button>
+{{#nod-button title="0" submit=(action "optionOne")}}
+{{/nod-button}}
+{{#nod-button title="1-2" submit=(action "optionTwo")}}
+{{/nod-button}}
+{{#nod-button title="3-4" submit=(action "optionThree")}}
+{{/nod-button}}
+{{#nod-button title="5+" submit=(action "optionFour")}}
+{{/nod-button}}
