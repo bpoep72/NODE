@@ -130,13 +130,13 @@ module.exports = Seed.extend ({
           dab.map(dab.get('accounts'), function (account, i) {
               return {
                 _id: account._id,
-                fname: `John${i}`,
-                lname: `Doe${i}`,
+                fname: faker.fake("{{name.firstName}}"),
+                lname: faker.fake("{{name.lastName}}"),
                 age: Math.floor(Math.random() * 115),
                 ethnicity: `ethnicity${i}`,
                 orientation: `orientation${i}`,
-                height: 32 + Math.floor(Math.random() * 68) + "in",
-                weight: 40 + Math.floor(Math.random() * 210) + "lbs",
+                height: 32 + Math.floor(Math.random() * 68) + " in",
+                weight: 40 + Math.floor(Math.random() * 210) + " lbs",
               };
           }),
         survey:
@@ -165,7 +165,7 @@ module.exports = Seed.extend ({
           dab.map(dab.get('accounts'), function(account, i) {
             return {
               _id: account._id,
-              home: random_nums_of_length(4) + ' street name ' + i,
+              home: random_nums_of_length(4) + faker.fake(" {{address.streetName}} {{address.streetSuffix}}"),
               city: `city${i}`,
               state: `state${i}`,
             };
