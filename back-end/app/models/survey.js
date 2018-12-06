@@ -3,7 +3,7 @@ const {Schema} = mongodb;
 const {Types: {referesTo}} = Schema;
 
 const schema = new Schema ({
-	drinker: {type: Boolean},
+	drinks: {type: String},
 	smoker: {type: Boolean},
 	recreationalDrugs: {type: Boolean},
 	healthyDiet: {type: Number},

@@ -9,6 +9,8 @@ var marital_statuses = ['Single', 'Married', 'Divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
 var payment_type = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
 var bank_names = ['Fifth Third', 'Chase', 'PNC', 'Bank of America', 'KeyBank'];
+var drinks = ['0', '1-2', '3-6', '7+'];
+
 
 var post_descriptions = [`This pilot project evaluates the effectiveness of a participatory music program for Veterans cared for in the Domiciliary Care for Homeless Veterans (DCHV) Program (Indianapolis, IN) in terms of improving quality of life. A secondary goal of this study is to evaluate the effect of the participatory music program on community reintegration and healthcare utilization.`,
                         `Prolonged alcohol use results in drinking despite resultant problems and adverse consequences. The investigators propose to test a laboratory model of human seeking despite aversion to use as an early marker of disease onset, and as a tool for study of its neural functional substrates, and identification of effective treatments.`,
@@ -146,7 +148,7 @@ module.exports = Seed.extend ({
           dab.map(dab.get('accounts'), function (account) { //map maps each account to 1 entry
             return {
               _id: account._id,
-              drinker: !!Math.round(Math.random()), //!! means convert to boolean
+              drinks: drinks[Math.floor(Math.random() * drinks.length)], //!! means convert to boolean
               smoker: !!Math.round(Math.random()),  //i know js is weird
               recreationalDrugs: !!Math.round(Math.random()),
               healthyDiet: Math.floor(Math.random() * 5),
