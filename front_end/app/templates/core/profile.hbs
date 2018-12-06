@@ -14,8 +14,6 @@
 <div id="topBar">User Profile</div>
 <br>
 <div>
-  <p>user ID: {{currentUserID}} </p>
-  <p>profile ID: {{model.id}} </p>
   <p>First Name: {{model.fname}} </p>
   <p>Last Name: {{model.lname}} </p>
   <p>Age: {{model.age}} </p>
@@ -31,7 +29,7 @@
   <button>Take the Lifestyle Survey Again</button>
 
   <br><br>
-  <p>Testing Update Profile</p>
+  <p>Update Profile</p>
 
   {{input value=fname placeholder="First Name"}}
   {{input value=lname placeholder="Last Name"}}
@@ -42,6 +40,8 @@
   {{input value=weight placeholder="Weight(kg)"}}
 
   <br>
-  <button {{action "updateProfile"}}>Apply</button>
+
+  {{#nod-button title="Apply" submit=(action "updateProfile")}}
+  {{/nod-button}}
 
 </div>

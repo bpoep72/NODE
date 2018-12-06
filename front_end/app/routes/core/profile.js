@@ -25,31 +25,4 @@ export default Route.extend(Authenticated, {
     // should handle errors with profile lookup
     return this.store.findRecord('profile', currentUser.id);
   },
-
-  actions: {
-    updateProfile() {
-      let controller = this.get('controller');
-
-      let fname = controller.get('fname')
-      let lname = controller.get('lname')
-      let age = controller.get('age')
-      let ethnicity = controller.get('ethnicity')
-      let orientation = controller.get('orientation')
-      let height = controller.get('height')
-      let weight = controller.get('weight')
-
-      let currentUser = this.get('currentUser');
-      this.store.findRecord('profile', currentUser.id).then(function(profile){
-        if(fname) profile.set('fname', fname);
-        if(lname) profile.set('lname', lname);
-        if(age) profile.set('age', age); // need to validate as # somewhere
-        if(ethnicity) profile.set('ethnicity', ethnicity);
-        if(orientation)  profile.set('orientation', orientation);
-        if(height)  profile.set('height', height);
-        if(weight)  profile.set('weight', weight);
-        profile.save(); // => PATCH to '/profiles/1'
-      })    
-    }
-  }
-
 });
