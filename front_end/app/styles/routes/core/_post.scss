@@ -1,0 +1,99 @@
+// route: core/post
+
+.route__core-post {
+
+
+    .single_post_page {
+
+        width: 100vw;
+        height: 100vh;
+    
+
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+            "imageDiv"
+            "content";
+        
+        
+        .imageDiv {
+            grid-area: imageDiv;
+            position: absolute;
+            // background-image: url('/assets/post_image3.png');
+            width: 100vw;
+            height: 222px;
+
+            .image {
+                width: 100%;
+                height: 100%;
+                // border-width: 10px;
+                // border-color: white;
+            }
+
+        }
+        
+        .content {
+            grid-area: content;
+
+            .title {
+                position: absolute;
+                width: 277px;
+                height: 19px;
+                font-family: URWDIN;
+                font-size: 21px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #4e595a;
+                margin-top: 15px;
+                margin-left: 30px;
+
+            }
+    
+            .dateMade {
+                position: absolute;
+                width: 336px;
+                height: 36px;
+                font-family: URWDIN;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #4e595a;
+                margin-top: 44px;
+                margin-left: 30px;
+
+            }
+
+            .payRate {
+                position: absolute;
+                width: 336px;
+                height: 36px;
+                font-family: URWDIN;
+                font-size: 11px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #4e595a;
+                margin-top: 65px;
+                margin-left: 30px;
+
+            }
+
+            .description {
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 30px;
+
+            }
+        }
+
+    }   
+
+}
