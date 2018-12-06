@@ -105,7 +105,9 @@ module.exports = Seed.extend ({
         }],
         post:
           dab.times(number_of_posts, function() {
-            i = Math.floor(Math.random() * post_descriptions.length);
+            //the post that this db entry will use
+            post_number = Math.floor(Math.random() * post_descriptions.length);
+            //the string describing the type of payment
             var payment = payment_type[Math.floor(Math.random() * payment_type.length)];
             var pay_amount;
             if(payment === "Non Paid" || payment === "Non Disclosed")
@@ -117,9 +119,9 @@ module.exports = Seed.extend ({
               pay_amount = Math.floor(Math.random() * 40);
             }
             return {
-              description: post_descriptions[i],
+              description: post_descriptions[post_number],
               owner: dab.ref(dab.sample(dab.get('accounts'))),
-              title: post_titles[i],
+              title: post_titles[post_number],
               payType: payment,
               payRate: pay_amount,
               rating: Math.floor(Math.random() * 5),
