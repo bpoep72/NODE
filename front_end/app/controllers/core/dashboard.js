@@ -19,22 +19,5 @@ export default Controller.extend({
         this.replaceRoute ('login');
       });
     },
-
-    executeProfile() {
-      this.transitionToRoute('core.profile');
-    },
-
-    executeAccount() {
-      this.transitionToRoute('core.account');
-    },
-
-    executeCalendar() {
-      this.transitionToRoute('core.calendar');
-    },
-
-    executePost() {
-      this.transitionToRoute('core.post');
-    }
-
   }
 });
