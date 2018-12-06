@@ -2,7 +2,8 @@
  * Application:  address.js
  * File:  app/models/address
  * Author: Jose
- * Purpose: To define the address schema
+ * Purpose:
+ *    To define the address schema that will be used in mongodb
  *
  * Licensing Information
  ***********************************************/
