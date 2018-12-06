@@ -6,7 +6,7 @@ var number_of_posts = 80; //will randomly assign owners
 
 var marital_statuses = ['single', 'married', 'divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
-var payment_type = ['Non disclosed', 'Per Visit', 'Per Completion', 'Per Hour'];
+var payment_type = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
 
 var post_descriptions = [`This pilot project evaluates the effectiveness of a participatory music program for Veterans cared for in the Domiciliary Care for Homeless Veterans (DCHV) Program (Indianapolis, IN) in terms of improving quality of life. A secondary goal of this study is to evaluate the effect of the participatory music program on community reintegration and healthcare utilization.`,
                         `Prolonged alcohol use results in drinking despite resultant problems and adverse consequences. The investigators propose to test a laboratory model of human seeking despite aversion to use as an early marker of disease onset, and as a tool for study of its neural functional substrates, and identification of effective treatments.`,
@@ -105,12 +105,22 @@ module.exports = Seed.extend ({
         post:
           dab.times(number_of_posts, function() {
             i = Math.floor(Math.random() * post_descriptions.length);
+            var payment = payment_type[Math.floor(Math.random() * payment_type.length)];
+            var pay_amount;
+            if(payment === "Non Paid" || payment === "Non Disclosed")
+            {
+                pay_amount = 0;
+            }
+            else
+            {
+              pay_amount = Math.floor(Math.random() * 40);
+            }
             return {
               description: post_descriptions[i],
               owner: dab.ref(dab.sample(dab.get('accounts'))),
               title: post_titles[i],
-              payType: payment_type[Math.floor(Math.random() * payment_type.length)],
-              payRate: Math.floor(Math.random() * 80),
+              payType: payment,
+              payRate: pay_amount,
               rating: Math.floor(Math.random() * 5),
               endDate: random_date(),
             };
