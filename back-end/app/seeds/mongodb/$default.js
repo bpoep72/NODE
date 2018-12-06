@@ -1,5 +1,6 @@
 const { Seed } = require ('@onehilltech/blueprint-mongodb');
 const dab = require ('@onehilltech/dab');
+var faker = require('faker');
 
 var number_of_accounts = 5;
 var number_of_posts = 80; //will randomly assign owners
