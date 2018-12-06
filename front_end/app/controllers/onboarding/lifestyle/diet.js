@@ -10,10 +10,10 @@ export default Controller.extend( Authenticated, {
       let currentUser = this.get('currentUser');
 
       
-      var controller = this;
+      var diet = Number(this.healthyDiet);
       this.store.findRecord( 'survey', currentUser.id).then(function(survey){
         // value from slider is a string, need to convert to number
-          survey.set('healthyDiet', Number(controller.healthyDiet));
+          survey.set('healthyDiet', diet);
           survey.save();
        });
   

@@ -19,5 +19,5 @@ export default DS.Model.extend({
   maritalStatus: DS.attr('string'),
   children: DS.attr('string'),
   educationLevel: DS.attr('string'),
-  user: DS.belongsTo('user', {async: true})
+//  user: DS.belongsTo('user', {async: true})
 });
