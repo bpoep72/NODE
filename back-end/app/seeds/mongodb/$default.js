@@ -6,8 +6,8 @@ var number_of_accounts = 5;
 var number_of_posts = 80; //will randomly assign owners
 
 var marital_statuses = ['Single', 'Married', 'Divorced'];
-var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
-var payment_type = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
+var card_issuers = ['Visa', 'Discover', 'American Express', 'Mastercard'];
+var payment_types = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
 var bank_names = ['Fifth Third', 'Chase', 'PNC', 'Bank of America', 'KeyBank'];
 var drinks = ['0', '1-2', '3-6', '7+'];
 
@@ -111,7 +111,7 @@ module.exports = Seed.extend ({
             //the post that this db entry will use
             post_number = Math.floor(Math.random() * post_descriptions.length);
             //the string describing the type of payment
-            var payment = payment_type[Math.floor(Math.random() * payment_type.length)];
+            var payment = payment_types[Math.floor(Math.random() * payment_types.length)];
             var pay_amount;
             if(payment === "Non Paid" || payment === "Non Disclosed")
             {
@@ -163,7 +163,7 @@ module.exports = Seed.extend ({
               CCV: random_nums_of_length(3),
               cardNumber: random_nums_of_length(16),
               routingNumber: random_nums_of_length(9),
-              issuer: card_issuer[Math.floor(Math.random() * card_issuer.length)],
+              issuer: card_issuers[Math.floor(Math.random() * card_issuers.length)],
               bankName: bank_names[Math.floor(Math.random() * bank_names.length)],
             };
           }),
