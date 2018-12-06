@@ -87,5 +87,8 @@ module.exports = Router.extend ({
                 allow: ['create', 'getOne', 'delete', 'update'],
             }
         }
+        /*
+         *end of gatekeeper protected routes
+         */
     }
 });
