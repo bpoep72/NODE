@@ -10,20 +10,28 @@
 * - 18 Nov 2018 (bwp) - Initial build with placeholders
 * - 26 Nov 2018 (bwp) - Moved under core (authenticated page)
 * - 28 Nov 2018 (bwp) - Added transitions to calendar, account, profile, post
+* - 04 Dec 2018 (bwp) - Added correct component, fixed component field translations
+* - 04 Dec 2018 (bwp) - added button to transition to core/post route
+*   (TODO: At this point, still need to tie the correct post to the component)
+*   (TODO: /core/post page needs to be built out with component or field data)
+* - 04 Dec 2018 (aib) - Removed unnecessary labels
 ***********************************************/
 --}}
-<div id="topBar">NoDE Dashboard Hamburger</div>
-<div id="navigation">
-  <button onclick={{action "executeCalendar"}}>Calendar</button>
-  <button onclick={{action "executeAccount"}}>Account Info</button>
-  <button onclick={{action "executeProfile"}}>View Profile</button>
-  <button onclick={{action "executePost"}}>(Clicking on a post)</button>
-</div>
+<div id="topBar"></div>
+
+<div>
 {{#each model as |post|}}
-  {{post-dashboard}}
+  {{#post-dashboard
+    id=post.id
+    image=post.image 
+    title=post.title
+    description=post.description
+    dateMade=post.dateMade
+    payRate=post.payRate}}
+  {{/post-dashboard}}
 {{/each}}
+</div>
+<div id="footer"></div>
 
-<div id="surveys">Survey Headline Model Placeholder{{outlet}}</div>
-<div id="footer">Footer placeholder</div>
-
+<button {{action "updateDashboard"}}>Update Postings</button>
 <button onclick={{action "signOut"}}>Sign Out</button>

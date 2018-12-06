@@ -1,54 +1,39 @@
 // route: dropdown-menu
 
 .dropdown-menu {
-  position: absolute;
+  position: fixed;
   top: -35px;
-  -webkit-transition: top 0.2s ease-out; /* Safari */
-  transition: top 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
   width: 100vw;
   height: 100px;
-  background-color: #f7a09b;
-  box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.1); }
+  background-color: #80d0d6;
+  box-shadow: inset 0px 19px 19px -20px rgba(0,0,0,0.35); 
+
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  z-index: 97 !important;
+}
 
 .dropdown-menu-open {
-  position: absolute;
+  position: fixed;
   top: 65px;
-  -webkit-transition: top 0.2s ease-out; /* Safari */
-  transition: top 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; /* Safari */
+  transition: all 0.2s ease-out;
   width: 100vw;
   height: 100px;
   background-color: #f7a09b;
-  box-shadow: inset 0px 10px 10px 0px rgba(0,0,0,0.1);  
-}
+  box-shadow: inset 0px 19px 19px -20px rgba(0,0,0,0.35);  
 
-.button-dashboard {
-  position: absolute;
-  top: 30px;
-  left: 5%;
-}
-
-.button-calendar {
-  position: absolute;
-  top: 30px;
-  left: 25%;
-}
-
-.button-account {
-  position: absolute;
-  top: 30px;
-  left: 45%;
-}
-
-.button-profile {
-  position: absolute;
-  top: 30px;
-  right: 25%;
-}
-
-.button-post {
-  position: absolute;
-  top: 30px;
-  right: 5%;
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  z-index: 97 !important;
 }
 
 .icon-image {

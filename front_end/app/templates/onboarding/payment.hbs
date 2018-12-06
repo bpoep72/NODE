@@ -1,0 +1,17 @@
+
+<div class="text">
+  <div class="title">Payment</div>
+</div>
+
+{{input value=bankName placeholder="Your Bank"}}
+{{input value=routingNumber placeholder="Routing Number"}}
+{{input value=accountNumber placeholder="Account Number"}}
+
+{{#nod-button title="Finish" submit=(action "continue")}}
+{{/nod-button}}
+{{#nod-button class="paypal-button"}}
+  PayPal
+{{/nod-button}}
+{{#nod-button class="venmo-button"}}
+  venmo
+{{/nod-button}}

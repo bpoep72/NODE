@@ -11,12 +11,20 @@
 * - 25 Nov 2018 (bwp) - Relocated to core route
 ***********************************************/
 --}}
-<div id="topBar">NoDE Post Hamburger</div>
-<div id="body">Post Information<br>
-  <div>Post Picture</div>
-  <div>Post Headline</div>
-  <div>Post body</div>
-  {{outlet}}</div>
-<div id="footer">Footer placeholder - User Actions<br>
-  <button>Accept</button><br>
+
+<div class="single_post_page">
+  <div class="imageDiv">
+    <img class="image" src="/assets/post_image3.png">{{model.image}}
+  </div>
+  <div class="content">
+    <div class="title">{{model.title}}</div>
+    <div class="dateMade">Available {{moment-format model.dateMade 'MM/DD/YYYY'}}</div>
+    {{!-- ^ needs to be a date-range of time study is available --}}
+    <div class="payRate">{{model.payRate}}</div>
+    <div class="description">{{model.description}}</div>
+  </div>
+{{!-- Need a Accept button --}}
 </div>
+
+
+{{outlet}}

@@ -12,14 +12,12 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-
   fname: DS.attr('string'),
   lname: DS.attr('string'),
   age: DS.attr('number'),
-  gender: DS.attr('string'),
   ethnicity: DS.attr('string'),
   orientation: DS.attr('string'),
   height: DS.attr('string'),
   weight: DS.attr('string'),
-  user: DS.belongsTo('user', {async: true})
+//  user: DS.belongsTo('user', {async: true})
 });
