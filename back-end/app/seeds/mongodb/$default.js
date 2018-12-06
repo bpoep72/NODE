@@ -5,7 +5,7 @@ var faker = require('faker');
 var number_of_accounts = 5;
 var number_of_posts = 80; //will randomly assign owners
 
-var marital_statuses = ['single', 'married', 'divorced'];
+var marital_statuses = ['Single', 'Married', 'Divorced'];
 var card_issuer = ['Visa', 'Discover', 'American Express', 'Mastercard'];
 var payment_type = ['Non Disclosed', 'Per Visit', 'Per Completion', 'Per Hour', 'Non Paid'];
 
