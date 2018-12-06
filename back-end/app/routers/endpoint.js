@@ -1,7 +1,7 @@
 
 /************************************************
- * Application:  address.js
- * File:  app/models/address
+ * Application:  endpoint.js
+ * File:  app/routes/endpoint.js
  * Author: Bryce Poeppel
  * Purpose:
  *    This file generates the core access points for items
