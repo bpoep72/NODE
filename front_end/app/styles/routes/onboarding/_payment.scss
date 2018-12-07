@@ -16,7 +16,7 @@
 
   .payment_input {
     display: inline-block;
-    width: 60%;
+    width: 70%;
     margin-top: 8%;
   }
 
@@ -27,11 +27,24 @@
 
   .text
   {
-    font-family: URW DIN;
+    font-family: urw-din, sans-serif;
     line-height: normal;
     font-size: 14px;
     text-align: center;
     letter-spacing: -0.02em;
     margin-top: 5%;
+  }
+
+  .text2
+  {
+    font-family: urw-din, sans-serif;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: 5%;
+    font-weight: normal;
+    color: #4E595A;
+    width: 80vw;
   }
 }
