@@ -1,14 +1,16 @@
 <div class="text">
   <div class="title">Education</div>
+  <div class="body">Select your level of education.</div>
 </div>
-<h3>Select your level of education.</h3>
-{{#nod-button title="high school / ged" submit=(action "optionOne")}}
-{{/nod-button}}
-{{#nod-button title="some college" submit=(action "optionTwo")}}
-{{/nod-button}}
-{{#nod-button title="bachelor's" submit=(action "optionThree")}}
-{{/nod-button}}
-{{#nod-button title="masters or higher" submit=(action "optionFour")}}
-{{/nod-button}}
-{{#nod-button title="other" submit=(action "optionFive")}}
-{{/nod-button}}
+<div class="buttons-grid">
+  {{#nod-button title="high school / ged" submit=(action "optionOne")}}
+  {{/nod-button}}
+  {{#nod-button title="some college" submit=(action "optionTwo")}}
+  {{/nod-button}}
+  {{#nod-button title="bachelor's" submit=(action "optionThree")}}
+  {{/nod-button}}
+  {{#nod-button title="masters or higher" submit=(action "optionFour")}}
+  {{/nod-button}}
+  {{#nod-button title="other" submit=(action "optionFive")}}
+  {{/nod-button}}
+</div>
