@@ -5,7 +5,7 @@
  * Creation Date: 2018-11-14
  * Purpose: Controller for the user profile
  * Related files: ../models/profile.js
-                  ../routers/
+                  ../routers/endpoint.js
  *
  * Licensing Information
  ***********************************************/
