@@ -20,24 +20,25 @@
       <br>
     </div>
     <form onSubmit="">
-        <input class="input" id="fname" type="text" placeholder="First Name">
+        <input class="input" value="fname" id="fname" type="text" placeholder="First Name">
         <br>
-        <input class="input" id="lname" type="text" placeholder="Last Name">
+        <input class="input" value="lname" id="lname" type="text" placeholder="Last Name">
         <br>
         <input class="input" id="address" type="text" placeholder="Address">
         <br>
-        <input class="input" id="age" type="text" placeholder="Age">
+        <input class="input" value="age" id="age" type="text" placeholder="Age">
         <br>
         <input class="input" id="sex-gender" type="text" placeholder="Sex/Gender">
         <br>
-        <input class="input" id="orientation" type="text" placeholder="Orientation">
+        <input class="input" value="orientation" id="orientation" type="text" placeholder="Orientation">
         <br>
-        <input class="input" id="height" type="text" placeholder="Height (Inches)">
+        <input class="input" value="height" id="height" type="text" placeholder="Height (Inches)">
         <br>
-        <input class="input" id="weight" type="text" placeholder="Weight (Pounds)">
+        <input class="input" value="weight" id="weight" type="text" placeholder="Weight (Pounds)">
         <br>
     </form>
-    {{nod-button title="Apply"}}
+    {{#nod-button title="Apply" submit=(action "updateProfile")}}
+    {{/nod-button}}
   </div>
 </div>
 

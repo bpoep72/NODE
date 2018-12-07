@@ -1,0 +1,245 @@
+// route: core/profile
+
+.route__core-profile {
+
+  /* BG Cool */
+background: #F0F8F8;
+/* UI Pane */
+box-shadow: 0px -10px 150px rgba(25, 64, 67, 0.17);
+
+  .profile-buttons {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    grid-gap: 1em;
+    align-items: center;
+    grid-auto-flow: row;
+    justify-items: center;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+
+  .profile-main {
+    position: relative;
+    width: 375px;
+    height: 667px;
+
+    background: #FFFFFF;
+  }
+
+  #user-ID-label, #user-ID-value, #profile-ID-label, #profile-ID-value, #ethnicity-label, #ethnicity-value {
+    display: none;
+  }
+
+  /*begin figma-generated styles*/
+
+  #profile-picture {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    left: 115px;
+    top: 105px;
+
+    /* NOD cast shadow */
+    //box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    //border-radius: 50%;
+  }
+
+  #name-value {
+    position: absolute;
+    //width: 124px;
+    height: 26px;
+    left: 124px;
+    top: 265px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 21px;
+
+    color: #4E595A;
+  }
+
+  #email-label {
+    position: absolute;
+    width: 28px;
+    height: 14px;
+    left: 56px;
+    top: 301px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #email-value {
+    position: absolute;
+    width: 130px;
+    height: 14px;
+    left: 61px;
+    top: 320px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+  #age-label {
+    position: absolute;
+    width: 19px;
+    height: 14px;
+    left: 56px;
+    top: 339px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #age-value {
+    position: absolute;
+    width: 12px;
+    height: 14px;
+    left: 61px;
+    top: 358px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+  #height-label {
+    position: absolute;
+    width: 32px;
+    height: 14px;
+    left: 105px;
+    top: 339px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #height-value {
+    position: absolute;
+    width: 26px;
+    height: 14px;
+    left: 110px;
+    top: 358px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+  #weight-label {
+    position: absolute;
+    width: 35px;
+    height: 14px;
+    left: 161px;
+    top: 339px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #weight-value {
+    position: absolute;
+    width: 36px;
+    height: 14px;
+    left: 166px;
+    top: 358px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+  #gender-label {
+    position: absolute;
+    width: 36px;
+    height: 14px;
+    left: 56px;
+    top: 377px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #gender-value {
+    position: absolute;
+    width: 25px;
+    height: 14px;
+    left: 61px;
+    top: 396px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+  #orientation-label {
+    position: absolute;
+    width: 56px;
+    height: 14px;
+    left: 123px;
+    top: 377px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #000000;
+
+    opacity: 0.2;
+  }
+
+  #orientation-value {
+    position: absolute;
+    width: 42px;
+    height: 14px;
+    left: 128px;
+    top: 396px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 11px;
+
+    color: #4E595A;
+  }
+
+}
