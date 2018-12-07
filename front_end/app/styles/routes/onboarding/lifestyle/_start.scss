@@ -1,0 +1,27 @@
+// route: onboarding/lifestyle/start
+
+.route__onboarding-lifestyle-start {
+
+  .body-grid {
+    margin-top: 129px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    grid-gap: 90px;
+    align-items: center;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+
+  .body {
+    width: 78.5vw;
+    font-size: 21px;
+  }
+
+  .confidential {
+    font-size: 14px;
+    font-weight: normal;
+    width: 78.5vw;
+    margin-top: 40px;
+  }
+
+}

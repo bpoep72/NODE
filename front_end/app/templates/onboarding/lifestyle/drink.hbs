@@ -1,5 +1,7 @@
-
-<h2>How many drinks do you have per week?</h2>
+<div class="survey-question">
+  <div class="text">How many drinks do you have per week?</div>
+</div>
+<div class="survey-buttons">
 {{#nod-button title="0" submit=(action "optionOne")}}
 {{/nod-button}}
 {{#nod-button title="1-2" submit=(action "optionTwo")}}
@@ -8,3 +10,4 @@
 {{/nod-button}}
 {{#nod-button title="7+" submit=(action "optionFour")}}
 {{/nod-button}}
+</div>

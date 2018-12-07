@@ -7,11 +7,11 @@
     width: 75%;
     background-color: #80d0d6;
     vertical-align: middle;
-    position: absolute;
+    position: fixed;
     -webkit-transform: translate(-50%, 0%);
     -moz-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
-    bottom: 70px;
+    bottom: 50px;
     left: 50%;
   }
 
@@ -19,11 +19,11 @@
     height: 45px;
     width: 93%;
   
-    position: absolute;
+    position: fixed;
     -webkit-transform: translate(-50%, 0%);
     -moz-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%);
-    bottom: 50px;
+    bottom: 30px;
     left: 50%;
   
     display: grid;

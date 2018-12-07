@@ -1,0 +1,92 @@
+// route: core/account
+
+.route__core-account {
+
+  background: #FFFFFF;
+
+  #parent {
+    display: inline-block;
+    width: 347px; //left - header width of 375
+    position: absolute;
+
+    left: 28px;
+    top: 115px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 21px;
+    margin-bottom: 10%;
+
+    color: #4E595A;
+  }
+
+  form
+  {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding-right: 20%;
+  }
+
+  input
+  {
+    flex-grow: 1;
+    margin-bottom: 5%;
+  }
+
+  #sex-gender, #fname, #lname, #height, #weight
+  {
+    width: 30%; //less than half of 80% (parent's width)
+  }
+
+  #age
+  {
+    width: 10%;
+  }
+
+  #page-title-container
+  {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  #page-title
+  {
+    display: inline-block;
+  }
+
+  .input {
+    display: flex;
+    flex-grow: .8;
+    align-items: center;
+    height: 23px;
+    width: 244px;
+    background: #F0F8F8;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    border-radius: 100px;
+    Fill: Solid #4E595A;
+    padding-left: 14px;
+    margin-left: 5%;
+    margin-top: 1.5%;
+  }
+
+  .nod-button-pink {
+    display: block;
+    margin:0;
+    width: 90%;
+    margin-left: 0;
+    margin-top: 6%;
+  }
+
+  h1 {
+    display: inline-block;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  label
+  {
+    font-size: 18px;
+  }
+
+}

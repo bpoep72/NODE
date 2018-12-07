@@ -1,6 +1,15 @@
+<div class="text">
+  <div class="survey-question">Do you eat a healthy diet?</div>
+  <div class="sub-text">Answer using the scale below.</div>
+  <div class="no">No</div><div class="yes">Yes</div>
+</div>
+<div class="diet-buttons">
+  {{input list="tickmarks" class="slider" type="range" min="0" max="5" step="0.5" value=healthyDiet}}
+  {{#nod-button title="Continue" submit=(action "continue")}}
+  {{/nod-button}}
+</div>
 
-<h2>Do you eat a healthy diet?</h2>
-
-{{input type="range" min="0" max="5" step="0.5" value=healthyDiet}}
-{{#nod-button title="Continue" submit=(action "continue")}}
-{{/nod-button}}
+<datalist id="tickmarks">
+  <option value="0" label="0">
+    </option>
+</datalist>

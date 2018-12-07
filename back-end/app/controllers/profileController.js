@@ -1,3 +1,15 @@
+/************************************************
+ * Application:  NoDE
+ * File:  backend/app/controllers/profileController.js
+ * Author: 
+ * Creation Date: 2018-11-14
+ * Purpose: Controller for the user profile
+ * Related files: ../models/profile.js
+                  ../routers/endpoint.js
+ *
+ * Licensing Information
+ ***********************************************/
+
 const { model, Action } = require ('@onehilltech/blueprint');
 const { ResourceController } = require ('@onehilltech/blueprint-mongodb');
 

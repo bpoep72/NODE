@@ -1,14 +1,17 @@
 <div class="text">
   <div class="title">Profile Info</div>
-  {{input value=fname placeholder="First Name"}}
-  {{input value=lname placeholder="Last Name"}}
-  {{input value=zipcode placeholder="ZIP Code"}}
-  {{input type=number value=age placeholder="Age"}}
-  {{input value=ethnicity placeholder="Ethnicity"}}
-  {{input value=orientation placeholder="Orientation"}}
-  {{input value=height placeholder="Height(cm)"}}
-  {{input value=weight placeholder="Weight(kg)"}}
-</div>
 
-{{#nod-button title="Continue" submit=(action "continue")}}
-{{/nod-button}}
+  <img class="logo-teal" src="/assets/logo_teal.svg">
+  <div class="input-grid">
+    {{input class="input-field" value=fname placeholder="First Name"}}
+    {{input class="input-field" value=lname placeholder="Last Name"}}
+    {{input class="input-field" value=zipcode placeholder="ZIP Code"}}
+    {{input class="input-field" type=number value=age placeholder="Age"}}
+    {{input class="input-field" value=ethnicity placeholder="Ethnicity"}}
+    {{input class="input-field" value=orientation placeholder="Orientation"}}
+    {{input class="input-field" value=height placeholder="Height(in)"}}
+    {{input class="input-field" value=weight placeholder="Weight(lbs)"}}
+    {{#nod-button class="continue-button" title="Continue" submit=(action "continue")}}
+    {{/nod-button}}
+  </div>
+</div>

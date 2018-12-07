@@ -11,21 +11,34 @@
 * - 26 Nov 2018 (bwp) - Moved under core (authenticated page)
 ***********************************************/
 --}}
-<div id="topBar">NoDE Account Info Hamburger</div>
-<div id="body">Update Account Info<br>
-  <form onSubmit="">
-    <label>First Name:</label><input type="text"><br>
-    <label>Last Name:</label><input type="text"><br>
-    <label>Age:</label><input type="text"><br>
-    <label>Sex/Gender:</label><input type="text"><br>
-    <label>Orientation:</label><input type="text"><br>
-    <label>Height:</label><input type="text">
-    <label>Weight:</label><input type="text"><br>
 
-  </form>
-  {{outlet}}</div>
-<div id="footer">Footer placeholder - User Actions<br>
-  <button>Apply</button><br>
+<div>
+  <div id="parent">
+    <div id="page-title-container">
+      <h4 id="page-title">Update Account Info</h4>
+      <br>
+      <br>
+    </div>
+    <form onSubmit="">
+        <input class="input" id="fname" type="text" placeholder="First Name">
+        <br>
+        <input class="input" id="lname" type="text" placeholder="Last Name">
+        <br>
+        <input class="input" id="address" type="text" placeholder="Address">
+        <br>
+        <input class="input" id="age" type="text" placeholder="Age">
+        <br>
+        <input class="input" id="sex-gender" type="text" placeholder="Sex/Gender">
+        <br>
+        <input class="input" id="orientation" type="text" placeholder="Orientation">
+        <br>
+        <input class="input" id="height" type="text" placeholder="Height (Inches)">
+        <br>
+        <input class="input" id="weight" type="text" placeholder="Weight (Pounds)">
+        <br>
+    </form>
+    {{nod-button title="Apply"}}
+  </div>
 </div>
 
-<button {{action "signOut"}}>Sign Out</button>
+{{outlet}}

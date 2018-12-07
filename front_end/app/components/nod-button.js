@@ -25,8 +25,8 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  classNameBindings: ['notBlue:nod-button-pink:nod-button-blue'],
-  notBlue: true,
+  classNameBindings: ['isBlue:nod-button-blue:nod-button'],
+  isBlue: false,
   title: '',
 
   click() {
