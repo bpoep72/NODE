@@ -1,17 +1,19 @@
 // route: onboarding/payment
 
 .route__onboarding-payment {
+
   #parent
   {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    width: 90%;
+    width: 88%;
     align-items: center;
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 8%;
+    overflow: hidden;
   }
 
   .payment_input {
@@ -22,7 +24,7 @@
 
   #button-container
   {
-    margin-top: 10%;
+    margin-top: 2%;
   }
 
   .nod-button
