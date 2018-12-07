@@ -1,0 +1,20 @@
+// route: onboarding/profile
+
+.route__onboarding-profile {
+
+  .input-grid {
+    margin-top: 40px;
+    grid-area: inputs;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 23px);
+    grid-gap: 20px;
+    align-items: center;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+
+  .continue-button {
+    margin-top: 20px;
+  }
+
+}
