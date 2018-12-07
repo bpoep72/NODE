@@ -18,13 +18,20 @@
   </div>
   <div class="content">
     <div class="title">{{model.title}}</div>
-    <div class="dateMade">Available {{moment-format model.dateMade 'MM/DD/YYYY'}}</div>
+    <div class="dateMade">Deadline {{moment-format model.dateMade 'MM/DD/YYYY'}}</div>
     {{!-- ^ needs to be a date-range of time study is available --}}
-    <div class="payRate">{{model.payRate}}</div>
-    <div class="description">{{model.description}}</div>
+    {{!-- <div class="payRate">{{model.payRate}}</div> --}} {{!-- They took pay rate out of the mock up example --}}
+    <div class="descriptionBox">
+      <div class="description">{{model.description}}</div>
+    </div>
   </div>
 {{!-- Need a Accept button --}}
-{{nod-button}}
+
+{{#button class="expandButton"}}Hey{{/button}}
+
+<div class="acceptButton">
+  {{#nod-button title="Accept"}}{{/nod-button}}
+</div>
 </div>
 
 

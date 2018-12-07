@@ -29,10 +29,12 @@
         
         .content {
 
+            
+
             .title {
                 position: absolute;
-                width: 277px;
-                height: 19px;
+                width: 330px;
+                height: 50px;
                 font-family: URWDIN;
                 font-size: 21px;
                 font-weight: bold;
@@ -41,8 +43,9 @@
                 line-height: normal;
                 letter-spacing: normal;
                 color: #4e595a;
-                margin-top: 15px;
+                margin-top: 240px;
                 margin-left: 30px;
+                overflow: hidden;
 
             }
     
@@ -51,41 +54,69 @@
                 width: 336px;
                 height: 36px;
                 font-family: URWDIN;
-                font-size: 11px;
+                font-size: 13px;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 color: #4e595a;
-                margin-top: 44px;
+                margin-top: 300px;
                 margin-left: 30px;
 
             }
 
-            .payRate {
+            // .payRate {
+            //     position: absolute;
+            //     width: 336px;
+            //     height: 36px;
+            //     font-family: URWDIN;
+            //     font-size: 11px;
+            //     font-weight: bold;
+            //     font-style: normal;
+            //     font-stretch: normal;
+            //     line-height: normal;
+            //     letter-spacing: normal;
+            //     color: #4e595a;
+            //     margin-top: 65px;
+            //     margin-left: 30px;
+
+            // }
+
+            .descriptionBox {
+
                 position: absolute;
-                width: 336px;
-                height: 36px;
-                font-family: URWDIN;
-                font-size: 11px;
-                font-weight: bold;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: #4e595a;
-                margin-top: 65px;
+                margin-top: 325px;
                 margin-left: 30px;
+                height: 150px;
+                width: 332px;
+                overflow: hidden;
+
+                .description {
+                    background-color: transparent;
+    
+                }
 
             }
 
-            .description {
-                position: absolute;
-                margin-top: 100px;
-                margin-left: 30px;
 
-            }
+        }
+
+        .expandButton {
+            background-image: url('/assets/');
+
+
+        }
+
+        .acceptButton {
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin-top: 540px;
+            margin-left: 27px;
+            
         }
 
     }   
