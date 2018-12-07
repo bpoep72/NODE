@@ -3,7 +3,7 @@
  * File:  backend/app/config/app.js
  * Author: 
  * Creation Date: 2018-11-14
- * Purpose: Define general configuration properties of the app
+ * Purpose: Defines general configuration properties of the app
  *
  * Licensing Information
  ***********************************************/
