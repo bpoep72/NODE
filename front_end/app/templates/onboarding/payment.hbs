@@ -4,21 +4,28 @@
 
 <div id="parent">
   <br>
-  <h1>Set up payment information.</h1>
-  <div class="text2">
+  <div class="onboard-question text">
+      Set up payment information
+  </div>
+  <br>
+  <br>
+  <div class="text" id="info-blurb">
     You may skip this step and come back to it later, or choose to connect your PayPal or Venmo account.
   </div>
   <br>
+
   {{input class="input-field payment_input" value=bankName placeholder="Your Bank"}}
   {{input class="input-field payment_input" value=routingNumber placeholder="Routing Number"}}
   {{input class="input-field payment_input" value=accountNumber placeholder="Account Number"}}
 
-  {{#nod-button title="Finish" submit=(action "continue")}}
-  {{/nod-button}}
-  {{#nod-button class="paypal-button"}}
-    <img class="paypal-logo" src="/assets/PayPal.png">
-  {{/nod-button}}
-  {{#nod-button class="venmo-button"}}
-    <img class="venmo-logo" src="/assets/venmo-logo.png">
-  {{/nod-button}}
+  <div id="button-container">
+    {{#nod-button title="Finish" submit=(action "continue")}}
+    {{/nod-button}}
+    {{#nod-button class="paypal-button"}}
+      PayPal
+    {{/nod-button}}
+    {{#nod-button class="venmo-button"}}
+      venmo
+    {{/nod-button}}
+  </div>
 </div>

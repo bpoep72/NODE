@@ -11,13 +11,18 @@
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
   }
 
   .payment_input {
     display: inline-block;
     width: 70%;
-    margin-top: 8%;
+    margin-top: 6%;
+  }
+
+  #button-container
+  {
+    margin-top: 10%;
   }
 
   .nod-button
@@ -25,26 +30,8 @@
     margin-top: 5%;
   }
 
-  .text
+  #info-blurb
   {
-    font-family: urw-din, sans-serif;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin-top: 5%;
-  }
-
-  .text2
-  {
-    font-family: urw-din, sans-serif;
-    line-height: normal;
-    font-size: 14px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin-top: 5%;
     font-weight: normal;
-    color: #4E595A;
-    width: 80vw;
   }
 }
