@@ -11,22 +11,20 @@
 * - 25 Nov 2018 (bwp) - Relocated to core route
 ***********************************************/
 --}}
-<div id="topBar">User Profile</div>
-<br>
-<div>
-  <p>First Name: {{model.fname}} </p>
-  <p>Last Name: {{model.lname}} </p>
-  <p>Age: {{model.age}} </p>
-  <p>Ethnicity: {{model.ethnicity}} </p>
-  <p>Orientation: {{model.orientation}} </p>
-  <p>Height: {{model.height}} </p>
-  <p>Weight: {{model.weight}} </p>
-</div>
-<br>
-<div id="footer">Footer placeholder - User Actions<br>
-  <button>Update Account Info</button><br>
-  <button>Update Payment Info</button><br>
-  <button>Take the Lifestyle Survey Again</button>
+<div class="profile-main">
+  <im id="profile-picture" src="/assets/profile-dummy/Profile Pic"></im>
+  <span id="user-ID-label">user ID:</span><span id="user-ID-value">{{currentUserID}}</span>
+  <span id="profile-ID-label">profile ID:</span><span id="profile-ID-value">{{model.id}}</span>
+  <span id="name-value">{{model.fname}} {{model.lname}}</span>
+  <span id="age-label">Age:</span><span id="age-value">{{model.age}}</span>
+  <span id="ethnicity-label">Ethnicity:</span><span id="ethnicity-value">{{model.ethnicity}}</span>
+  <span id="orientation-label">Orientation:</span><span id="orientation-value">{{model.orientation}}</span>
+  <span id="height-label">Height:</span><span id="height-value">{{model.height}}</span>
+  <span id="weight-label">Weight:</span><span id="weight-value">{{model.weight}}</span>
+
+  <button id="update-account-button">Update Account Info</button><br>
+  <button id="update-payment-button">Update Payment Info</button><br>
+  <button id="retake-survey-button">Take the Lifestyle Survey Again</button>
 
   <br><br>
   <p>Update Profile</p>
