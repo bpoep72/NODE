@@ -57,6 +57,15 @@
 
   .paypal-button {
     background-color: #FFC43A;
+  
+  }
+
+  .paypal-logo {
+    vertical-align: middle;
+  }
+
+  .venmo-logo {
+    vertical-align: middle;
   }
 
   .venmo-button {
@@ -69,7 +78,7 @@
     color: #4E595A;
 
     display: grid;
-    grid-template-columns: 15px 120px 15px 100px;
+    grid-template-columns: 10px 120px 10px 100px;
     grid-template-rows: repeat(auto-fit, 23px);
     grid-gap: 20px;
     align-items: center;
