@@ -18,7 +18,7 @@
   .onboard-question {
     margin-top: 0.3em;
     margin-bottom: 0.7em;
-    width: 80vw;
+    width: 83.5vw;
     font-size: 42px;
     line-height: 50px;
     text-align: center;
@@ -27,6 +27,7 @@
     transform: translate(-50%, 0%);
     left: 50%;
     position: relative;
+    letter-spacing: -1px;
   }
 
   .buttons-grid {
@@ -56,10 +57,34 @@
 
   .paypal-button {
     background-color: #FFC43A;
+
+  }
+
+  .paypal-logo {
+    vertical-align: middle;
+  }
+
+  .venmo-logo {
+    vertical-align: middle;
   }
 
   .venmo-button {
     background: #3C95D2;
+  }
+
+  .medical-small-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #4E595A;
+
+    display: grid;
+    grid-template-columns: 10px 120px 10px 100px;
+    grid-template-rows: repeat(auto-fit, 23px);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: start;
+    margin-left: 3em;
+    margin-bottom: 2em;
   }
 
 }
