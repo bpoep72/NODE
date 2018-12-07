@@ -15,8 +15,33 @@
     font-family: URW DIN;
     line-height: normal;
     font-size: 21px;
+    margin-bottom: 10%;
 
     color: #4E595A;
+  }
+
+  form
+  {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding-right: 20%;
+  }
+
+  input
+  {
+    flex-grow: 1;
+    margin-bottom: 5%;
+  }
+
+  #sex-gender, #fname, #lname, #height, #weight
+  {
+    width: 30%; //less than half of 80% (parent's width)
+  }
+
+  #age
+  {
+    width: 10%;
   }
 
   #page-title-container
@@ -50,6 +75,7 @@
     margin:0;
     width: 90%;
     margin-left: 0;
+    margin-top: 6%;
   }
 
   h1 {
@@ -57,6 +83,7 @@
     flex-grow: 1;
     width: 100%;
   }
+
   label
   {
     font-size: 18px;
