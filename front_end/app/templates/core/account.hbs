@@ -12,21 +12,38 @@
 ***********************************************/
 --}}
 
-<div style="display:flex;" id="body">
-  <span>Update Account Info</span>
-  <br>
-  <form onSubmit="">
-    <label>First Name:</label><input class="input" type="text"><br>
-    <label>Last Name:</label><input class="input" type="text"><br>
-    <label>Age:</label><input class="input" type="text"><br>
-    <label>Sex/Gender:</label><input class="input" type="text"><br>
-    <label>Orientation:</label><input class="input" type="text"><br>
-    <label>Height:</label><input class="input" type="text">
-    <label>Weight:</label><input class="input" type="text"><br>
-
-  </form>
-
-  {{outlet}}</div>
-<div id="footer">Footer placeholder - User Actions<br>
-  <button>Apply</button><br>
+<div>
+  <div id="parent">
+    <div id="page-title-container">
+      <h4 id="page-title">Update Account Info</h4>
+      <br>
+      <br>
+    </div>
+    <form onSubmit="">
+      <label>First Name:</label>
+        <input class="input" id="fname" type="text" placeholder="First Name">
+        <br>
+      <label>Last Name:</label>
+        <input class="input" id="lname" type="text" placeholder="Last Name">
+        <br>
+      <label>Age:</label>
+        <input class="input" id="age" type="text" placeholder="Age">
+        <br>
+      <label>Sex/Gender:</label>
+        <input class="input" id="sex-gender" type="text" placeholder="Sex/Gender">
+        <br>
+      <label>Orientation:</label>
+        <input class="input" id="orientation" type="text" placeholder="Orientation">
+        <br>
+      <label>Height in inches:</label>
+        <input class="input" id="height" type="text" placeholder="Height">
+        <br>
+      <label>Weight in lbs:</label>
+        <input class="input" id="width" type="text" placeholder="Weight">
+        <br>
+      {{nod-button title="Update"}}
+    </form>
+  </div>
 </div>
+
+{{outlet}}

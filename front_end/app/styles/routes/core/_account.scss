@@ -2,10 +2,64 @@
 
 .route__core-account {
 
-  display: flex;
+  background: #FFFFFF;
 
-  .input {
+  #parent {
+    display: inline-block;
+    width: 347px; //left - header width of 375
+    position: absolute;
+
+    left: 28px;
+    top: 115px;
+
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 21px;
+
+    color: #4E595A;
+  }
+
+  #page-title-container
+  {
     display: flex;
     flex-grow: 1;
   }
+
+  #page-title
+  {
+    display: inline-block;
+  }
+
+  .input {
+    display: flex;
+    flex-grow: .8;
+    align-items: center;
+    height: 23px;
+    width: 244px;
+    background: #F0F8F8;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    border-radius: 100px;
+    Fill: Solid #4E595A;
+    padding-left: 14px;
+    margin-left: 5%;
+    margin-top: 1.5%;
+  }
+
+  .nod-button-pink {
+    display: block;
+    margin:0;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  h1 {
+    display: inline-block;
+    flex-grow: 1;
+    width: 100%;
+  }
+  label
+  {
+    font-size: 18px;
+  }
+
 }
