@@ -3,15 +3,23 @@
   <div class="title">Payment</div>
 </div>
 
-{{input value=bankName placeholder="Your Bank"}}
-{{input value=routingNumber placeholder="Routing Number"}}
-{{input value=accountNumber placeholder="Account Number"}}
+<div id="parent">
+  <br>
+  <h1>Set up payment information</h1>
+  <div class="text">
+    You may skip this step and come back to it later, or choose to connect your PayPal or Venmo account.
+  </div>
+  <br>
+  {{input class="input-field payment_input" value=bankName placeholder="Your Bank"}}
+  {{input class="input-field payment_input" value=routingNumber placeholder="Routing Number"}}
+  {{input class="input-field payment_input" value=accountNumber placeholder="Account Number"}}
 
-{{#nod-button title="Finish" submit=(action "continue")}}
-{{/nod-button}}
-{{#nod-button class="paypal-button"}}
-  PayPal
-{{/nod-button}}
-{{#nod-button class="venmo-button"}}
-  venmo
-{{/nod-button}}
+  {{#nod-button title="Finish" submit=(action "continue")}}
+  {{/nod-button}}
+  {{#nod-button class="paypal-button"}}
+    PayPal
+  {{/nod-button}}
+  {{#nod-button class="venmo-button"}}
+    venmo
+  {{/nod-button}}
+</div>

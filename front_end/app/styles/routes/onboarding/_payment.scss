@@ -1,0 +1,37 @@
+// route: onboarding/payment
+
+.route__onboarding-payment {
+  #parent
+  {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+  }
+
+  .payment_input {
+    display: inline-block;
+    width: 60%;
+    margin-top: 8%;
+  }
+
+  .nod-button
+  {
+    margin-top: 5%;
+  }
+
+  .text
+  {
+    font-family: URW DIN;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: 5%;
+  }
+}
