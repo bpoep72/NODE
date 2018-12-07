@@ -2,12 +2,7 @@
 
 .route__onboarding {
 
-  .text {
-    font-family: urw-din, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #4E595A;
-  }
+  background: #F0F8F8;
 
   .title {
     font-size: 21px;
@@ -15,11 +10,81 @@
     margin-top: 26px;
   }
 
+  .logo-teal {
+    position: relative;
+    margin-top: 33px;
+  }
+
+  .onboard-question {
+    margin-top: 0.3em;
+    margin-bottom: 0.7em;
+    width: 83.5vw;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: relative;
+    letter-spacing: -1px;
+  }
+
+  .buttons-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit);
+    grid-gap: 1.2em;
+    align-items: center;
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+
+  .input-field {
+    height: 23px;
+    width: 244px;
+    background: #F0F8F8;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding-left: 14px;
+  }
+
+  .text {
+    font-family: urw-din, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #4E595A;
+  }
+
   .paypal-button {
     background-color: #FFC43A;
+
+  }
+
+  .paypal-logo {
+    vertical-align: middle;
+  }
+
+  .venmo-logo {
+    vertical-align: middle;
   }
 
   .venmo-button {
     background: #3C95D2;
   }
+
+  .medical-small-text {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #4E595A;
+
+    display: grid;
+    grid-template-columns: 10px 120px 10px 100px;
+    grid-template-rows: repeat(auto-fit, 23px);
+    grid-gap: 20px;
+    align-items: center;
+    justify-items: start;
+    margin-left: 3em;
+    margin-bottom: 2em;
+  }
+
 }

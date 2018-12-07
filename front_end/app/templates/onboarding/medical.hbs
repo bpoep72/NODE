@@ -1,18 +1,24 @@
 <div class="text">
   <div class="title">Medical</div>
+  <div class="onboard-question">
+    Please select any medical conditions you have or have had.
+  </div>
 </div>
-<h3>Please select any medical conditions you have or have had.</h3>
-{{input type="checkbox" name="allergiesSeasonal"}}Allergies (seasonal)
-{{input type="checkbox" name="allergiesFood"}}Allergies (food)
-{{input type="checkbox" name="alzheimers"}}Alzheimer's
-{{input type="checkbox" name="anemia"}}Anemia
-{{input type="checkbox" name="anxiety"}}Anxiety
-{{input type="checkbox" name="breastDisease"}}Breast Disease
-{{input type="checkbox" name="cholesterol"}}Cholesterol
-{{input type="checkbox" name="colonDisease"}}Colon Disease
-{{input type="checkbox" name="depression"}}Depression
-{{input type="checkbox" name="diabetes"}}Diabetes
-{{input type="checkbox" name="digestiveDisorders"}}Digestive Disorders
+<div class="medical-small-text">
+  {{input type="checkbox" name="allergiesSeasonal"}}Allergies (seasonal)
+  {{input type="checkbox" name="allergiesFood"}}Allergies (food)
+  {{input type="checkbox" name="alzheimers"}}Alzheimer's
+  {{input type="checkbox" name="anemia"}}Anemia
+  {{input type="checkbox" name="anxiety"}}Anxiety
+  {{input type="checkbox" name="breastDisease"}}Breast Disease
+  {{input type="checkbox" name="cholesterol"}}Cholesterol
+  {{input type="checkbox" name="colonDisease"}}Colon Disease
+  {{input type="checkbox" name="depression"}}Depression
+  {{input type="checkbox" name="diabetes"}}Diabetes
+  {{input type="checkbox" name="digestiveDisorders"}}Digestive Disorders
 {{input type="checkbox" name="fatigue"}}Fatigue
-{{#nod-button title="Continue" submit=(action "continue")}}
-{{/nod-button}}
+</div>
+<div class="buttons-grid">
+  {{#nod-button title="Continue" submit=(action "continue")}}
+  {{/nod-button}}
+</div>
