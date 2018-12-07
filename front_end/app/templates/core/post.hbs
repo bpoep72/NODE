@@ -14,16 +14,24 @@
 
 <div class="single_post_page">
   <div class="imageDiv">
-    <img class="image" src="/assets/post_image3.png">{{model.image}}
+    {{!-- <img class="image" src="/assets/single_post_image.png">{{model.image}} --}}
   </div>
   <div class="content">
     <div class="title">{{model.title}}</div>
-    <div class="dateMade">Available {{moment-format model.dateMade 'MM/DD/YYYY'}}</div>
+    <div class="dateMade">Deadline {{moment-format model.dateMade 'MM/DD/YYYY'}}</div>
     {{!-- ^ needs to be a date-range of time study is available --}}
-    <div class="payRate">{{model.payRate}}</div>
-    <div class="description">{{model.description}}</div>
+    {{!-- <div class="payRate">{{model.payRate}}</div> --}} {{!-- They took pay rate out of the mock up example --}}
+    <div class="descriptionBox">
+      <div class="description">{{model.description}}</div>
+    </div>
   </div>
 {{!-- Need a Accept button --}}
+
+{{#button class="expandButton"}}Hey{{/button}}
+
+<div class="acceptButton">
+  {{#nod-button title="Accept"}}{{/nod-button}}
+</div>
 </div>
 
 
