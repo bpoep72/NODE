@@ -20,7 +20,7 @@
     "@onehilltech/dab": "^1.2.0",
     "cors": "^2.8.5",
     "faker": "^4.1.0",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "@onehilltech/blueprint-testing": "^0.8.0"
